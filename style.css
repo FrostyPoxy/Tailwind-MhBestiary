@@ -1,0 +1,475 @@
+@import "tailwindcss";
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+nav{
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color:#ad5d5d;
+    background-image: linear-gradient(to right, #ad5d5d ,#92b6d5, #af9483);
+    align-items: center;
+}
+
+nav div.logo {
+    display: flex;
+    flex-direction: row;
+    color:white;
+    gap:10px;
+    align-items: center;
+}
+
+nav div.logo img {
+    width: 2.2rem;
+    height: 3.6rem;
+    border-radius: 5%;
+}
+nav a {
+    text-decoration: none;
+    background-color: #ea940a; 
+    padding: 10px 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+
+
+/*Header*/
+
+header section {
+    
+    background-image: url("img/background-header.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 6em 0;    
+}
+
+header section div {
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 60px;
+    padding: 10px;
+    border:3px solid black;
+    text-align: center;
+    font-size: 40px
+}
+
+header section div > * {
+    margin: 0;
+    padding: 1.2rem;
+}
+
+header section h1 {
+    font-size: 60px;
+    color: #ea940a;
+}
+
+
+
+#header-description {  
+    width: 50rem;
+    font-size: 32px;
+    text-align: center;
+}
+
+header section a {
+    text-decoration: none;
+    font-size: 36px;
+    background-color: #ea940a; 
+    padding: 1rem 1rem;
+    border-radius: 16px;
+    color: white;
+}
+
+/*Discoveries*/
+
+section.discoveries {
+
+    background-color:#1C1A16 ;
+    text-align: center;
+}
+
+
+ h2 {
+    font-size: 44px;
+    font-weight: bold;
+    color: #C4622D;
+    padding-top: 1rem;
+}
+
+div.discoveries-heading {
+    width: 80vw;
+    margin-top: 1em;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+div.discoveries-heading  > *{
+    margin: 0;
+}
+
+div.discoveries-heading p {
+    color: rgb(211, 198, 169);
+    font-size: 34px;
+    word-wrap: normal;
+    padding-bottom: 1em;
+}
+
+div.discoveries-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+}
+
+
+div.discoveries-info div{
+    background-color: #2A2622;
+    color: #F4E9D8;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 16vw;
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1rem;
+}
+
+div.discoveries-info div > * {
+    margin: 0;
+}
+
+div.discoveries-info img {
+    width:6rem ;
+    height:6rem;
+    background-color: aliceblue;
+    border-radius: 50px;
+    padding: 0.5em;
+}
+
+p.description-heading {
+    font-size: 28px;
+    color: white;
+}
+
+/*  Numbers*/
+
+section#numbers {
+
+    background-color: rgba(12, 12, 12, 1);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div.numbers-heading h3 {
+    font-size: 36px;
+    color: #C4622D;
+}
+
+div.numbers-heading {
+    padding-bottom: 2rem;
+}
+
+div.numbers-heading p {
+    font-size:28px;
+}
+
+div.numbers-info {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.numbers-info-p {
+    color: #ea940a;
+    font-size: 44px;
+}
+
+/*Categpries*/
+
+#category {
+    background-color: rgb(31, 31, 30);
+    text-align: center;
+    color: white;
+}
+
+div.category-heading {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+div.category-heading > * {
+    margin: 0;
+}
+
+div.category-heading h4 {
+    padding-top: 2rem;
+    font-size: 40px;
+    color: #C4622D;
+}
+
+div.category-heading p {
+    font-size:24px;
+    padding-bottom: 2.5rem;
+}
+
+div.category-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+div.box-config {
+    background-color: rgba(7, 7, 7, 0.715);
+    border-radius: 16px;
+    text-align: center;
+    width: 28vw;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.box-config-heading{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    gap: 0.5em;
+}
+
+p.name {
+    font-size:24px ;
+    font-weight: bold;
+}
+
+p.flying-wywern {
+    background-color: #ea6f0a;
+    background-image: linear-gradient(to right, #ea6f0a ,#dda16f, #ea6f0a);
+    padding: 0.8em 0.2em 0.2em 0.2em;
+    border-radius: 15px;
+}
+
+p.leviathans {
+    background-color: #0abaea;
+    background-image: linear-gradient(to right, #0abaea, #7ad0e7 ,#0abaea);
+    padding: 0.8em 0.2em 0.2em 0.2em;
+    border-radius: 15px;
+}
+
+p.fanged-beasts {
+    background-color:#8d21be;
+    background-image: linear-gradient(to right, #8d21be, #a166bd ,#8d21be );
+    padding: 0.8em 0.2em 0.2em 0.2em;
+    border-radius: 15px;
+}
+
+section#category a {
+    padding: 0.5em;
+    text-decoration: none;
+    background-color: #1C1A16;
+    width: auto;
+    height: auto;
+    color:white ;
+}
+
+/*Journey*/
+
+#journey {
+    background-color: rgb(42, 36, 25);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2em;
+    gap: 2rem;
+}
+
+#journey > *{
+    margin: 0;
+}
+
+#journey h5 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+#journey p {
+    font-size: 24px;
+    color: #96938f;
+    width: 90%;
+}
+
+#journey a{
+    text-decoration: none;
+    font-size: 30px;
+    background-color: #ea940a; 
+    padding: 12px 7px;
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(31, 31, 30);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div {
+    display: inline-flex;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+footer > * {
+    margin: 0;
+}
+
+footer div * {
+    margin: 0;
+}
+
+footer img {
+    width: 4vh;
+    height: 6vh;
+    border-radius: 5%;
+}
+
+footer div p {
+    font-size: 24px;
+}
+
+
+@media (max-width: 768px){
+
+    nav a {
+        display: none;
+    }
+
+    header section h1 {
+        font-size: 40px;
+    }
+
+    header section p {
+        font-size: 30px;
+    }
+
+    header section p.header-description {
+        font-size: 26px;
+    }
+    header section a {
+        font-size: 26px;
+    }
+
+    header section div {
+        margin: 5%;
+    }
+    nav h1 {
+        font-size: 1em;
+    }
+
+    #header-description {
+        width: auto;
+    }
+
+    div.discoveries-info div {
+        min-height: 460px;  
+    }
+}
+
+@media (max-width: 425px){
+    
+    
+    nav div.logo{
+        gap: 0;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin-right: 0.2rem;
+        padding: 6px 2px;
+    }
+
+    nav a.big-screen {
+    display: none;
+    }
+
+    nav a.small-screen {
+    display: block;
+    }
+
+    div.discoveries-info {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    div.discoveries-info div{
+        padding: 1em 0;
+        margin: 5%;
+        min-height: auto;
+        width: auto;
+        justify-content: space-around;
+    }
+
+    div.numbers-heading p {
+        margin: 5%;
+    }
+
+    div.category-boxes {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    div.box-config {
+        width: auto;
+    }
+
+    footer p {
+        font-size:12px ;
+        text-align: center;
+    }
+    
+    footer div {
+        gap: 0;
+    }
+
+    footer div p {
+        font-size: 16px;
+    }
+
+    
+
+} 
