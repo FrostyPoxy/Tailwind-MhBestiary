@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-lagiacrus.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagiacrus</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="monster-categories.html">
+            <span class="material-symbols-outlined">arrow_left_alt</span>
+            <p>Back to Bestiary</p> 
+        </a>
+        <div class="nav-info">
+            <span class="badge-threat">Threat level 6</span>
+            <div class="badge-element">
+                <img class="element" src="img/elements/thunder.png" alt="thunder">
+                <span>Thunder</span>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<section class="information">
+    <div class="side-bar">
+            <h2>Quick Facts</h2>
+            <img src="img/page/lagiacrus/Lagiacrus_Icon.png" alt="lagiacrus">
+
+            <div class="side-bar-content">
+                <h3>Enemy type:</h3>
+                <p>Large Monster</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Species:</h3>
+                <p>Leviathan</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Elements:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/thunder.png">
+                    <p>Thunder</p>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Aliments:</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/elements/thunder.png" alt="thunder">
+                            <span>Thunderblight</span>
+                        </li>
+                        <li>
+                            <img src="img/elements/water.png" alt="water">
+                            <span>Waterblight</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Weakness:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png" alt="fire">
+                    <span>Fire</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Resistance:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/thunder.png" alt="thunder">
+                    <span>Thunder</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Location(s):</h3>
+                <ul>
+                    <li>
+                        <img src="img/Locations/scarlet-forest.png" alt="Scarlet-Forest">
+                        <span>Scarlet Forest</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    <div class="main">
+        <div class="main-nav">
+            <a href="javascript:void(0);" id="overview-button" class="current" onclick="overview()">Overview</a>
+            <a href="javascript:void(0);" id="weaknesses-button" onclick="weaknesses()">Weaknesses</a>
+            <a href="javascript:void(0);" id="combat-button" onclick="combat()">Combat</a>
+            <a href="javascript:void(0);" id="materials-button" onclick="materials()">Materials</a>
+        </div>
+
+         <div class="side-bar-phone">
+            <h2>Quick Facts</h2>
+            <img class="monster-icon" src="img/page/lagiacrus/Lagiacrus_Icon.png" alt="lagiacrus">
+            <div class="side-bar-phone-divider">
+                <div>
+                    <div class="side-bar-phone-content">
+                        <h3>Enemy type:</h3>
+                        <p>Large Monster</p>
+                    </div>
+
+                    <div class="side-bar-phone-content">
+                        <h3>Species:</h3>
+                        <p>Leviathan</p>
+                    </div>
+
+                    <div class="side-bar-phone-content">
+                        <h3>Elements:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/thunder.png">
+                            <p>Thunder</p>
+                        </div>
+                    </div>
+                
+                    <div class="side-bar-phone-content">
+                        <h3>Aliments:</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <img src="img/elements/thunder.png" alt="thunder">
+                                    <span>Thunderblight</span>
+                                </li>
+                                <li>
+                                    <img src="img/elements/water.png" alt="water">
+                                    <span>Waterblight</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="side-bar-phone-content">
+                        <h3>Weakness:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Fire</span>
+                        </div>
+                    </div>
+                    
+                    <div class="side-bar-phone-content">
+                        <h3>Resistance:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/thunder.png" alt="thunder">
+                            <span>Thunder</span>
+                        </div>
+                    </div>
+                    
+                    <div class="side-bar-content">
+                        <h3>Location(s):</h3>
+                        <ul>
+                            <li>
+                                <img src="img/Locations/scarlet-forest.png" alt="Scarlet-Forest">
+                                <span>Scarlet Forest</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="overview">
+        <div class="description">
+            <h2>Species Description</h2>
+            <p>Leviathans that exist atop the vast aquatic food chain. Lagiacrus generate electricity via their hides to store in their spinal organs, and are capable of discharging a current strong enough to boil the seawater around them. They have been sighted fighting other monsters in the Scarlet Forest, presumably drawn in from other regions in search of prey and more fertile environs.</p>
+        </div>
+        <div>
+
+        <div class="description">
+            <h2>Information</h2>
+            <p>Lagiacrus (aka 海竜) is a Large Monster in Monster Hunter Wilds (MHWilds), included in the Free Title Update 2 on June 30, 2025. To unlock the extra mission, you must be at least HR 31 and have completed both the main mission "A World Turned Upside Down" and the side mission "Forest Doshaguma." Large Monsters such as Lagiacrus are hostile and are usually the primary objective of Hunts. They provide valuable Materials when defeated, that allow Hunters to craft gear.</p>
+        </div>
+
+        <div class="location">
+
+            <h2>Locations</h2>
+
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <a target="_blank" href="img/Locations/MHWilds-Scarlet_Forest.png">
+                            <img src="img/Locations/MHWilds-Scarlet_Forest.png" alt="">
+                        </a>
+                        <p class="desc">Scarlet Forest</p>
+                    </div>
+                </div>
+        </div>
+        
+        </section>
+        
+            <!-- Type of damages -->
+
+        <section id="weaknesses">
+            <div class="table-divider">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Lagiacrus Parts</th>
+                            <th><img src="img/damage/cut-damage-icon.png" alt=""></th>
+                            <th><img src="img/damage/blunt-damage-icon.png" alt=""></th>
+                            <th><img src="img/damage/ammo-damage-icon.png" alt=""></th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>Head</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Neck</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Chest</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Torso</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Foreleg</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Back</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt=""></td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Hind Leg</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Tail</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            </tbody>
+                    </table>
+                </div>
+
+            <!-- Elements -->
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Lagiacrus Parts</th>
+                            <th><img src="img/elements/fire.png" alt=""></th>
+                            <th><img src="img/elements/water.png" alt=""></th>
+                            <th><img src="img/elements/thunder.png" alt=""></th>
+                            <th><img src="img/elements/ice.png" alt=""></th>
+                            <th><img src="img/elements/dragon.png" alt=""></th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>Head</td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Neck</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Chest</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Torso</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Foreleg</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Back</td>
+                            <td>
+                                <img src="img/damage/3_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Hind Leg</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Tail</td>
+                            <td>
+                                <img src="img/damage/3_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-divider">
+            
+                <!-- Aliments table -->
+                <div class="table-wrapper aliments">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Aliments</th>
+                            <th>Description </th>
+                            <th>Effectiveness</th>                   
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/poison.png" alt="">
+                                    <p>Poison</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p> Poison slowly drains the monster's health for a short amount of time	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/sleep_icon.png" alt="">
+                                    <p>Sleep</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>The monster slumbers a short while. Attacking will awaken it, but the first attack will do more damage.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/paralysis_icon.png" alt="">
+                                    <p>Paralysis</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>The monster is paralyzed and cannot move for a short amount of time	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/blastlight_icon.png" alt="">
+                                    <p>Blastblight</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Blast element builds as you attack. Once a certain threshold is reached, it detonates, causing damage.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/stun_status.png" alt="">
+                                    <p>Stun</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Attacking a monster's head many times with a blunt weapon will KO them, leaving them wide open.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/exhaust_status.png" alt="">
+                                    <p>Exhaust</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Once blunt damage buildup reaches a certain level, the monster will lose a portion of its stamina.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper aliments">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>Description </th>
+                            <th>Effectiveness</th>                   
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/flash_pod.png" alt="">
+                                    <p>Flash Pod</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Strong Flashes will dizzy or disorient a monster for a short period of time.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/screamer_pod.png" alt="">
+                                    <p>Screamer pod</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Some monsters are startled by loud noises, prompting specific reactions from them.</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/shock_trap.png" alt="">
+                                    <p>Shock Trap</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>If a monster triggers a shock trap, it will be immobilized and open to attack for a short amount of time.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/pitfall_trap.png" alt="">
+                                    <p>Pitfall Trap</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>If a monster triggers a pitfall trap, it will become stuck and open to attack as it struggles to free itself.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="moveset">
+
+            <h2>Lagiacrus Moveset</h2>
+
+            <div>
+                <h3>Ball Lightning (Underwater)</h3>
+                <p>Lagiacrus unleashes multiple balls of lightning underwater, zapping hunters that are hit, applying <span><img src="img/elements/thunder.png" alt="thunder"></span> Thunderblight</p>
+            </div>
+            
+            <div>
+                <h3>Lightning Dive (Underwater)</h3>
+                <p>Lagiacrus roars, then quickly dives toward the hunter's direction with lightning around its body. Players hit by the dive have <span><img src="img/elements/thunder.png" alt="thunder"></span> Thunderblight applied to them.</p>
+            </div>
+
+            <div>
+                <h3>Lightning Tail Whip (Underwater)</h3>
+                <p>Lagiacrus charges up while generating lightning on its back, then whips its tail toward the player's direction. Players hit with the tail have <span><img src="img/elements/thunder.png" alt="thunder"></span> Thunderblight applied to them.</p>
+            </div>
+
+            <div>
+                <h3>Lightning Vortex (Underwater)</h3>
+                <p>Lagiacrus charges up, then spins quickly in an area, generating a whirlpool imbued with lightning that pulls hunters towards the center. After a while, the whirlpool will release a discharge of lightning in a small area, applying <span><img src="img/elements/thunder.png" alt="thunder"></span> Thunderblight to players caught in the explosion.</p>
+            </div>
+
+            <div>
+                <h3>Spark (On Land)</h3>
+                <p>Lagiacrus's jaw momentarily glows, then throws a small projectile of lightning on the ground that spreads in a small straight line towards the side.</p>
+            </div>
+
+            <div>
+                <h3>Charged Tantrum (On Land)</h3>
+                <p>Lagiacrus's back glows, then quickly dives toward the hunter's direction. Then, Lagiacrus will use its body to tackle sideways.</p>
+            </div>
+
+            <div>
+                <h3>Bite and Whip (On Land)</h3>
+                <p>Lagiacrus will bite at the player, then whip its tail as a follow-up attack.</p>
+            </div>
+
+            <div>
+                <h3>Lunging Bite (On Land)</h3>
+                <p>Lagiacrus lunges forward as it attempts to bite the hunter.</p>
+            </div>
+
+            <div>
+                <h3>Lightning Tendrils (On Land)</h3>
+                <p>Lagiacrus's back will start to glow as it charges up an attack, then discharges multiple lightning arcs around it, dealing multiple instances of damage. Players hit by the arcs will have <span><img src="img/elements/thunder.png" alt="thunder"></span> Thunderblight applied to them.</p>
+            </div>
+
+            <div>
+                <h3>Rolling Tail Whip (On Land)</h3>
+                <p> Lagiacrus uses its whole body to roll toward the hunter, closing the distance between them. It will then use its tail to whip at the player to finish the sequence.</p>
+            </div>
+
+            <div>
+                <h3>Charged Tail Whip Combo (On Land)</h3>
+                <p>Lagiacrus faces the player sideways, then uses its tail to whip at the player while releasing a lightning bolt. It will then turn to its other side, then do the same sequence.</p>
+            </div>
+
+            <div>
+                <h3>Standing Bite (On Land)</h3>
+                <p>Lagiacrus stands on its hind legs, then lunges forward as it bites and releases multiple Lightning strikes around it.</p>
+            </div>
+        </section>
+
+        <section id="drops">
+
+            <div>
+                <div class="lr-materials">
+                <h2>Low Rank</h2>
+                <p><span>Lagiacrus</span> can only be found as a High  Rank encounter.</p>
+
+            </div>
+            
+            <div class="hr-materials">
+                <h2>High Rank</h2>
+                <p>The table below indicates the various materials or items obtained from the High Rank version of Lagiacrus. It also includes the percentage chance of acquiring the materials.</p>
+            
+            <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Frequency</th>
+                    <th>Target Rewards</th>
+                    <th>Break Part Rewards</th>
+                    <th>Carves</th>
+                    <th>Wound Destroyed</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/lagiacrus/drops/lagiacrus_claw_+.png" alt="">
+                            <p>LaLagiacrus Claw +</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>18%</td>
+                    <td>100% (Foreleg)</td>
+                    <td>18%</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/lagiacrus/drops/lagiacrus_hide_+.png" alt="">
+                            <p>Lagiacrus Hide +</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>22%</td>
+                    <td>-</td>
+                    <td>23%</td>
+                    <td>50%</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/lagiacrus/drops/lagiacrus_scale_+.png" alt="">
+                            <p>Lagiacrus Scale +</p>
+                        </div>
+                    </td>
+                    <td><img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>20%</td>
+                    <td>-</td>
+                    <td>22%</td>
+                    <td>50%</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/lagiacrus/drops/lagiacrus_shockspike.png" alt="">
+                            <p>Lagiacrus Shockspike</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>15%</td>
+                    <td>100% (Back)</td>
+                    <td>13%</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/lagiacrus/drops/lagiacrus_claw_+.png" alt="">
+                            <p>Lagiacrus Horn +</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>8%</td>
+                    <td>100% (Head)</td>
+                    <td>11%</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/lagiacrus/drops/lagiacrus_tail_.png" alt="">
+                            <p>Lagiacrus Tail</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>8%</td>
+                    <td>-</td>
+                    <td>11% | 100% (Severed Part, Tail)</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/lagiacrus/drops/legiacrus_certificate_s.png" alt="">
+                            <p>Lagiacrus Certificate S</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>8%</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/lagiacrus/drops/lagiacrus_sapphire.png" alt="">
+                            <p>Lagiacrus Sapphire</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>1%</td>
+                    <td>-</td>
+                    <td>2%</td>
+                    <td>-</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        </div>
+        
+        </section>
+    </div>
+</section>
+<script src="display.js"></script>
+</body>
+</html>

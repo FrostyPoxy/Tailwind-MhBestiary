@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* --- Layout Helpers --- */
+    .mh-container {
+        @apply max-w-7xl mx-auto px-4;
+    }
+    .mh-section {
+        @apply py-16 px-4;
+    }
+    
+    /* --- Navigation --- */
+    .mh-nav-wrapper {
+        @apply bg-gradient-to-r from-[#ad5d5d] via-[#92b6d5] to-[#af9483];
+    }
+    .mh-nav {
+        @apply flex justify-between items-center max-h-[100px] py-4 px-6 mx-auto;
+    }
+    .mh-logo-container {
+        @apply flex items-center gap-4 text-white;
+    }
+    .mh-logo-container img {
+        @apply w-[2.2rem] h-[3.6rem] rounded-[5%];
+    }
+    .mh-logo-container h1 {
+        @apply text-base md:text-2xl font-bold; 
+    }
+    .mh-nav-btn {
+        @apply hidden md:flex bg-mh-orange text-white font-bold py-2 px-4 rounded-lg items-center no-underline hover:brightness-110 transition-all;
+    }
+
+    /* --- Hero Section --- */
+    .mh-hero {
+        @apply relative flex flex-col justify-center items-center gap-4 py-24 px-4 bg-cover bg-center bg-no-repeat;
+        /* Using arbitrary value for URL to match your folder structure */
+        background-image: url('img/background-header.png');
+    }
+    .mh-hero-box {
+        @apply bg-white/55 backdrop-blur-sm rounded-[60px] border-[3px] border-black text-center p-8 max-w-4xl mx-auto flex flex-col gap-4;
+    }
+    .mh-hero-box h1 {
+        @apply text-4xl md:text-[60px] text-mh-orange font-bold leading-tight;
+    }
+    .mh-hero-desc {
+        @apply text-xl md:text-[32px] text-center leading-normal;
+    }
+    .mh-hero-btn {
+        @apply text-2xl md:text-4xl bg-mh-orange text-white py-4 px-8 rounded-2xl no-underline font-bold inline-block hover:brightness-110 transition-all;
+    }
+
+    /* --- Discoveries Section --- */
+    .mh-heading {
+        @apply text-[44px] font-bold text-mh-darkOrange pt-4;
+    }
+    .mh-subheading {
+        @apply text-[#d3c6a9] text-2xl md:text-[34px] pb-4;
+    }
+    .mh-grid {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-8;
+    }
+    .mh-card {
+        @apply bg-[#2A2622] text-[#F4E9D8] rounded-[20px] p-6 text-center flex flex-col items-center justify-center gap-4 min-h-[360px] hover:-translate-y-1 transition-transform duration-300;
+    }
+    .mh-card img {
+        @apply w-24 h-24 bg-aliceblue rounded-[50px] p-2 object-contain;
+    }
+    .mh-card-title {
+        @apply text-[28px] text-white font-bold;
+    }
+
+    /* --- Numbers Section --- */
+    .mh-stats-grid {
+        @apply grid grid-cols-2 md:grid-cols-4 gap-8 text-center pb-8;
+    }
+    .mh-stat-num {
+        @apply text-[44px] text-mh-orange font-bold;
+    }
+
+    /* --- Category Section --- */
+    .mh-category-box {
+        @apply bg-black/70 rounded-2xl p-6 text-center text-white flex flex-col justify-between hover:border hover:border-mh-orange transition-all;
+    }
+    .mh-pill {
+        @apply py-2 px-3 rounded-[15px] text-sm md:text-base font-bold whitespace-nowrap;
+    }
+    .mh-learn-btn {
+        @apply p-2 bg-[#1C1A16] text-white no-underline rounded hover:bg-mh-orange transition-colors w-full block;
+    }
+}

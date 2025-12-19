@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output-categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monster Hunter Bestiary</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div>
+            <img src="img/Logo.png" alt="icon">
+            <a href="index.html">Monster Hunter Wilds Bestiary</a>
+        </div>
+    </nav>
+</header>
+<section>
+
+    <div class="mobile-header">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="img/white-hamburger-menu-icon-24.jpg" alt=""></a>
+            <h1>Monster Categories</h1>
+        </div>
+        
+        <div id="side-bar">
+            <h1>Monster Categories</h1>
+            <button class="button current" href="javascript:void(0);" onclick="filterSelection('all')">All Monsters</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('amphibian')">Amphibians</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('bird-wyvern')">Bird Wyvern</button> 
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('brute-wyvern')">Brute Wyvern</button>  
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('cephalopod')">Cephalopods</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('construct')">Constructs</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('demi-elder')">Demi Elders</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('fanged-beast')">Fanged Beasts</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('flying-wyvern')">Flying Wyverns</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('leviathan')">Leviathans</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('temnocerant')">Temnocerans</button>
+
+        </div>
+        <div class="main">
+
+            <a class="card fanged-beast" href="ajarakan.html">
+                <div class="card-container">
+                    <div class="project-card">
+                        <div class="card-content">
+                            <img class="back" src="img/category/mhwilds-ajarakan.png"
+                                alt="ajarakan"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x250/0f172a/FFFFFF?text=Image+Error';">
+                            <div class="p-6"> <!-- Increased padding slightly -->
+                                <h3 class="text-3xl font-bold text-white mb-3">Ajarakan</h3>
+                                <p class="subtitle text-slate-300 mb-5 leading-relaxed">Blaze</p>
+                                <div class="location">
+                                    <img src="img/category/location.svg" alt="">
+                                    <p>Oilwell Basin, Ruins of Wyveria</p>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5 mb-6">
+                                    <span class="tech-tag bg-blue-500/50 text-white px-3 py-1.5 text-base font-semibold rounded-full">Threat 2</span>
+                                    <span class="tech-tag bg-red-700/50 text-red-200 px-3 py-1.5 text-base font-semibold rounded-full">Fire</span>
+                                    <span class="tech-tag bg-black text-white px-3 py-1.5 text-base font-semibold rounded-full">Fanged Beast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card amphibian" href="chatacabra.html">
+                <div class="card-container">
+                    <div class="project-card">
+                        <div class="card-content">
+                            <img class="back" src="img/category/chtacabra-img.png"
+                                alt="Rathalos"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x250/0f172a/FFFFFF?text=Image+Error';">
+                            <div class="p-6"> <!-- Increased padding slightly -->
+                                <h3 class="text-3xl font-bold text-white mb-3">Chatacabra</h3>
+                                <p class="subtitle text-slate-300 mb-5 leading-relaxed">Desert Trotter</p>
+                                <div class="location">
+                                    <img src="img/category/location.svg" alt="">
+                                    <p>Windward Plains</p>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5 mb-6">
+                                    <span class="tech-tag bg-blue-300/50 text-white px-3 py-1.5 text-base font-semibold rounded-full">Threat 1</span>
+                                    <span class="tech-tag bg-slate-950/50 text-amber-50 px-3 py-1.5 text-base font-semibold rounded-full">Elementless</span>
+                                    <span class="tech-tag bg-black text-white px-3 py-1.5 text-base font-semibold rounded-full">Amphibian</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card demi-elder" href="gore-magala.html">
+                <div class="card-container">
+                    <div class="project-card">
+                        <div class="card-content">
+                            <img class="back" src="img/category/MHWilds-Gore_Magala.png"
+                                alt="ajarakan"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x250/0f172a/FFFFFF?text=Image+Error';">
+                            <div class="p-6"> <!-- Increased padding slightly -->
+                                <h3 class="text-3xl font-bold text-white mb-3">Gore Magala</h3>
+                                <p class="subtitle text-slate-300 mb-5 leading-relaxed">The Eclipse Dragon</p>
+                                <div class="location">
+                                    <img src="img/category/location.svg" alt="">
+                                    <p>Iceshard Cliffs</p>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5 mb-6">
+                                    <span class="tech-tag bg-red-700/50 text-white px-3 py-1.5 text-base font-semibold rounded-full">Threat 6</span>
+                                    <span class="tech-tag bg-black text-white px-3 py-1.5 text-base font-semibold rounded-full">TBC</span>
+                                    <span class="tech-tag bg-black text-white px-3 py-1.5 text-base font-semibold rounded-full">Demi Elder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card flying-wyvern" href="rahtalos.html">
+                <div class="card-container">
+                    <div class="project-card">
+                        <div class="card-content">
+                            <img class="back" src="img/category/rathalos_-_monster_hunter_rise.png"
+                                alt="Rathalos"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x250/0f172a/FFFFFF?text=Image+Error';">
+                            <div class="p-6"> <!-- Increased padding slightly -->
+                                <h3 class="text-3xl font-bold text-white mb-3">Rathalos</h3>
+                                <p class="subtitle text-slate-300 mb-5 leading-relaxed">King of the Skies</p>
+                                <div class="location">
+                                    <img src="img/category/location.svg" alt="">
+                                    <p>Ancient Forest, Oilwell Basin, Ruins of Wyveria</p>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5 mb-6">
+                                    <span class="tech-tag bg-orange-700/50 text-white px-3 py-1.5 text-base font-semibold rounded-full">Threat 5</span>
+                                    <span class="tech-tag bg-red-700/50 text-red-200 px-3 py-1.5 text-base font-semibold rounded-full">Fire</span>
+                                    <span class="tech-tag bg-black text-white px-3 py-1.5 text-base font-semibold rounded-full"> Flying wyvern</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card temnocerant" href="nerscylla.html">
+                <div class="card-container">
+                    <div class="project-card">
+                        <div class="card-content">
+                            <img class="back" src="img/category/MHWilds-Nerscylla.png"
+                                alt="ajarakan"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x250/0f172a/FFFFFF?text=Image+Error';">
+                            <div class="p-6"> <!-- Increased padding slightly -->
+                                <h3 class="text-3xl font-bold text-white mb-3">Nerscylla</h3>
+                                <p class="subtitle text-slate-300 mb-5 leading-relaxed">Shadow Spider</p>
+                                <div class="location">
+                                    <img src="img/category/location.svg" alt="">
+                                    <p>Oilwell Basin, Iceshard Cliffs, Ruins of Wyveria</p>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5 mb-6">
+                                    <span class="tech-tag bg-blue-500/50 text-white px-3 py-1.5 text-base font-semibold rounded-full">Threat 2</span>
+                                    <span class="tech-tag bg-black text-white px-3 py-1.5 text-base font-semibold rounded-full">Elementless</span>
+                                    <span class="tech-tag bg-violet-600 text-white px-3 py-1.5 text-base font-semibold rounded-full">Temnocerant</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a class="card cephalopod" href="nu-udra.html">
+                <div class="card-container">
+                    <div class="project-card">
+                        <div class="card-content">
+                            <img class="back" src="img/category/MHWilds-Nu_Udra.png"
+                                alt="ajarakan"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x250/0f172a/FFFFFF?text=Image+Error';">
+                            <div class="p-6"> <!-- Increased padding slightly -->
+                                <h3 class="text-3xl font-bold text-white mb-3">Nu Udra</h3>
+                                <p class="subtitle text-slate-300 mb-5 leading-relaxed">Black Flame</p>
+                                <div class="location">
+                                    <img src="img/category/location.svg" alt="">
+                                    <p>Oilwell Basin</p>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5 mb-6">
+                                    <span class="tech-tag bg-blue-900/50 text-white px-3 py-1.5 text-base font-semibold rounded-full">Threat 3</span>
+                                    <span class="tech-tag bg-red-700/50 text-red-200 px-3 py-1.5 text-base font-semibold rounded-full">Fire</span>
+                                    <span class="tech-tag bg-amber-800 text-white px-3 py-1.5 text-base font-semibold rounded-full">Cephalopod</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card brute-wyvern" href="quematrice.html">
+                <div class="card-container">
+                    <div class="project-card">
+                        <div class="card-content">
+                            <img class="back" src="img/category/MHWilds-Quematrice.png"
+                                alt="ajarakan"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x250/0f172a/FFFFFF?text=Image+Error';">
+                            <div class="p-6"> <!-- Increased padding slightly -->
+                                <h3 class="text-3xl font-bold text-white mb-3">Quematrice</h3>
+                                <p class="subtitle text-slate-300 mb-5 leading-relaxed">Flame Tail Wyvern</p>
+                                <div class="location">
+                                    <img src="img/category/location.svg" alt="">
+                                    <p>Wildspire Waste, Ruins of Wyveria</p>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5 mb-6">
+                                    <span class="tech-tag bg-blue-500/50 text-white px-3 py-1.5 text-base font-semibold rounded-full">Threat 2</span>
+                                    <span class="tech-tag bg-red-700/50 text-red-200 px-3 py-1.5 text-base font-semibold rounded-full">Fire</span>
+                                    <span class="tech-tag bg-amber-800 text-white px-3 py-1.5 text-base font-semibold rounded-full">Cephalopod</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+
+            <a class="card fanged-beast" href="ajarakan.html">
+                <div class="card-image">
+                    <span class="badge badge-threat-2">Threat 2</span>
+                    <img class="back" src="img/category/mhwilds-ajarakan.png" alt="A">
+                    <div class="badge-element" >
+                        <img class="element" src="img/elements/fire.png" alt="fire">
+                        <span>Fire</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Ajarakan</h2>
+                    <p class="subtitle">Blaze</p>
+                    <div class="location">
+                        <img src="img/category/location.svg" alt="location">
+                        <span>Oilwell Basin, Ruins of Wyveria</span>
+                    </div>
+                    <div class="tag">
+                        <p>Fanged Beast</p> 
+                        <img src="img/category/right-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </a>
+
+            <a class="card amphibian" href="chatacabra.html">
+                <div class="card-image">
+                    <span class="badge badge-threat-1">Threat 1</span>
+                    <img class="back" src="img/category/chtacabra-img.png" alt="Rathalos">
+                    <div class="badge-element" >
+                        <img class="element" src="img/damage/uneffective.png" alt="elementless">
+                        <span>Elementless</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Chatacabra</h2>
+                    <p class="subtitle">Desert Trotter</p>
+                    <div class="location">
+                        <img src="img/category/location.svg" alt="location">
+                        <span>Windward Plains</span>
+                    </div>
+                    <div class="tag">
+                        <p>Amphibian</p> 
+                        <img src="img/category/right-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </a>
+
+            <a class="card demi-elder" href="gore-magala.html">
+                <div class="card-image">
+                    <span class="badge badge-threat-6">Threat 6</span>
+                    <img class="back" src="img/category/MHWilds-Gore_Magala.png" alt="Gore Magala">
+                    <div class="badge-element" >
+                        <span>TBC</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Gore Magala</h2>
+                    <p class="subtitle">The Eclipse Dragon</p>
+                    <div class="location">
+                        <img src="img/category/location.svg" alt="location">
+                        <span>Iceshard Cliffs</span>
+                    </div>
+                    <div class="tag">
+                        <p>Demi Elder</p> 
+                        <img src="img/category/right-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </a>
+
+            <a class="card temnocerant" href="nerscylla.html">
+                <div class="card-image">
+                    <span class="badge badge-threat-2">Threat 2</span>
+                    <img class="back" src="img/category/MHWilds-Nerscylla.png" alt="Nerscylla">
+                    <div class="badge-element">
+                        <img class="element" src="img/damage/uneffective.png" alt="elementless">
+                        <span>Elementless</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Nerscylla</h2>
+                    <p class="subtitle">Shadow Spider</p>
+                    <div class="location">
+                        <img src="img/category/location.svg" alt="location">
+                        <span>Oilwell Basin, Iceshard Cliffs, Ruins of Wyveria</span>
+                    </div>
+                    <div class="tag">
+                        <p>Temnocerant</p> 
+                        <img src="img/category/right-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </a>
+
+            <a class="card cephalopod" href="nu-udra.html">
+                <div class="card-image">
+                    <span class="badge badge-threat-3">Threat 3</span>
+                    <img class="back" src="img/category/MHWilds-Nu_Udra.png" alt="Nu Udra">
+                    <div class="badge-element" >
+                        <img class="element" src="img/elements/fire.png" alt="fire">
+                        <span>Fire</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Nu Udra</h2>
+                    <p class="subtitle">Black Flame</p>
+                    <div class="location">
+                        <img src="img/category/location.svg" alt="location">
+                        <span>Oilwell Basin</span>
+                    </div>
+                    <div class="tag">
+                        <p>Cephalopod</p> 
+                        <img src="img/category/right-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </a>
+
+            <a class="card brute-wyvern" href="quematrice.html">
+                <div class="card-image">
+                    <span class="badge badge-threat-1">Threat 1</span>
+                    <img class="back" src="img/category/MHWilds-Quematrice.png" alt="Rathalos">
+                    <div class="badge-element" >
+                        <img class="element" src="img/elements/fire.png" alt="fire">
+                        <span>Fire</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Quematrice</h2>
+                    <p class="subtitle">Flame Tail Wyvern</p>
+                    <div class="location">
+                        <img src="img/category/location.svg" alt="location">
+                        <span>Wildspire Waste, Ruins of Wyveria</span>
+                    </div>
+                    <div class="tag">
+                        <p>Brute Wyvern</p> 
+                        <img src="img/category/right-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </a>
+            
+            <a class="card flying-wyvern" href="rahtalos.html">
+                <div class="card-image">
+                    <span class="badge badge-threat-5">Threat 5</span>
+                    <img class="back" src="img/category/rathalos_-_monster_hunter_rise.png" alt="Rathalos">
+                    <div class="badge-element" >
+                        <img class="element" src="img/elements/fire.png" alt="fire">
+                        <span >Fire</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Rathalos</h2>
+                    <p class="subtitle">King of the Skies</p>
+                    <div class="location">
+                        <img src="img/category/location.svg" alt="location">
+                        <span>Ancient Forest, Oilwell Basin, Ruins of Wyveria</span>
+                    </div>
+                    <div class="tag">
+                        <p>Flying wyvern</p> 
+                        <img src="img/category/right-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </a>
+
+            <a class="card bird-wyvern" href="yian-kut-ku.html">
+                <div class="card-image">
+                    <span class="badge badge-threat-4">Threat 4</span>
+                    <img class="back" src="img/category/YianKutKuWilds (1).png" alt="Yian Kut-Ku">
+                    <div class="badge-element" >
+                        <img class="element" src="img/elements/fire.png" alt="fire">
+                        <span>Fire</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Yian Kut-Ku</h2>
+                    <p class="subtitle">Strange Bird</p>
+                    <div class="location">
+                        <img src="img/category/location.svg" alt="location">
+                        <span>Scarlet Forest, Iceshard Cliffs</span>
+                    </div>
+                    <div class="tag">
+                        <p>Bird Wyvern</p> 
+                        <img src="img/category/right-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </a>
+
+            <a class="card construct" href="zoh-shia.html">
+                <div class="card-image">
+                    <span class="badge badge-threat-3">Threat 3</span>
+                    <img class="back" src="img/category/mhwilds-zoh_shia.png" alt="Zoh Shia">
+                    <div class="badge-element" >
+                        <img class="element" src="img/elements/fire.png" alt="fire">
+                        <span>Fire</span>
+                        <img class="element" src="img/elements/thunder.png" alt="thunder">
+                        <span>Thunder</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Zoh Shia</h2>
+                    <p class="subtitle">The Final Guardian</p>
+                    <div class="location">
+                        <img src="img/category/location.svg" alt="location">
+                        <span>Ruins of Wyveria</span>
+                    </div>
+                    <div class="tag">
+                        <p>Construct</p> 
+                        <img src="img/category/right-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </a>
+
+            <a class="card leviathan" href="lagiacrus.html">
+                <div class="card-image">
+                    <span class="badge badge-threat-6">Threat 6</span>
+                    <img class="back" src="img/category/MHWilds-Lagiacrus.png" alt="Lagiacrus">
+                    <div class="badge-element" >
+                        <img class="element" src="img/elements/thunder.png" alt="thunder">
+                        <span>Thunder</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Lagiacrus</h2>
+                    <p class="subtitle">The Sea-Born Lord</p>
+                    <div class="location">
+                        <img src="img/category/location.svg" alt="location">
+                        <span>Ancient Forest</span>
+                    </div>
+                    <div class="tag">
+                        <p>Leviathan</p> 
+                        <img src="img/category/right-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </a>
+
+        </div>
+</section>
+
+<script src="category.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

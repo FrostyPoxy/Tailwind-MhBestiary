@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-ajarakan.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajarakan</title>
+</head>
+<body class="rathalos">
+<header>
+    <nav>
+        <a href="monster-categories.html">
+            <span class="material-symbols-outlined">arrow_left_alt</span>
+            <p>Back to Bestiary</p> 
+        </a>
+        <div class="nav-info">
+            <span class="badge-threat">Threat level 3</span>
+            <div class="badge-element">
+                <img class="element" src="img/elements/fire.png" alt="fire">
+                <span>Fire</span>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<section class="information">
+    <div class="side-bar">
+        <div>
+            <h2>Quick Facts</h2>
+            <img src="img/page/nu-udra/nu_udra_monsters_icon.png" alt="rathalos">
+
+            <div class="side-bar-content">
+                <h3>Enemy type:</h3>
+                <p>Large Monster</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Species:</h3>
+                <p>Cephalopod</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Elements:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png" alt="fire">
+                    <span>Fire</span>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Aliments:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png" alt="fire">
+                    <span>Fireblight</span>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Weakness:</h3>
+                <div class="monster-info-row"> 
+                    <img src="img/elements/water.png" alt="water">
+                    <span>Water</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Ressistance</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png" alt="fire">
+                    <span>Fire</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Location(s):</h3>
+                <div>
+                    <img src="img/Locations/oilwell-basin.png" alt="Oilwell Basin">
+                    <span>Oilwell Basin</span>
+                </div>
+            </div>
+        
+        </div>
+
+        </div>
+    
+    <div class="main">
+        <div class="main-nav">
+            <a href="javascript:void(0);" id="overview-button" class="current" onclick="overview()">Overview</a>
+            <a href="javascript:void(0);" id="weaknesses-button" onclick="weaknesses()">Weaknesses</a>
+            <a href="javascript:void(0);" id="combat-button" onclick="combat()">Combat</a>
+            <a href="javascript:void(0);" id="materials-button" onclick="materials()">Materials</a>
+        </div>
+
+        <div class="side-bar-phone">
+            <h2>Quick Facts</h2>
+            <img class="monster-icon" src="img/page/ajarakan/ajarakan_monsters_icon.png" alt="rathalos">
+            <div class="side-bar-phone-divider">
+                <div>
+                    <div class="side-bar-phone-content">
+                        <h3>Enemy type:</h3>
+                        <p>Large Monster</p>
+                    </div>
+
+                    <div class="side-bar-phone-content">
+                        <h3>Species:</h3>
+                        <p>Cephalopod</p>
+                    </div>
+
+                    <div class="side-bar-phone-content">
+                        <h3>Elements:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Fire</span>
+                        </div>
+                    </div>
+                
+                    <div class="side-bar-phone-content">
+                        <h3>Aliments:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Fireblight</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="side-bar-phone-content">
+                        <h3>Weakness:</h3>
+                        <div class="monster-info-row"> 
+                            <img src="img/elements/water.png" alt="water">
+                            <span>Water</span>
+                        </div>  
+                    </div>
+                    
+                    <div class="side-bar-phone-content">
+                        <h3>Resistance:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Fire</span>
+                        </div>
+                    </div>
+                    
+                    <div class="side-bar-content">
+                        <h3>Location(s):</h3>
+                        <ul>
+                            <li>
+                                <img src="img/Locations/oilwell-basin.png" alt="Oilwell Basin">
+                                <span>Oilwell Basin</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="overview">
+        <div class="description">
+            <h2>Species Description</h2>
+            <p>Ajarakan is a Large  in Monster Hunter Wilds (MHWilds). Ajarakan is a fanged beast that may induce Fireblight, and it inhabits Oilwell Basin and Ruins of Wyveria. Large Monsters such as Ajarakan are hostile and are usually the primary objective of Hunts. They provide valuable Materials when defeated, that allow Hunters to craft gear.</p>
+        </div>
+            <div class="description">
+                <h2>Information</h2>
+                <p>Characteristic by their highly developed carapaces, Ajarakan wrap themselves in molten metal that they rub together to heat up and create explosions. Presumably due to the friction of the metal, they can reach high enough temperatures to melt even the ground or bullets. They can also use their strong limbs to grip onto the ceiling and move around freely, so a hunter must watch out from every angle, including above.</p>
+            </div>
+
+            <div class="location">
+
+                <h2>Locations</h2>
+
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <a target="_blank" href="img/Locations/oilwell-basin.png">
+                                <img src="img/Locations/MHWilds-Oilwell_Basin.png" alt="">
+                            </a>
+                            <p class="desc">Oilwell Basin</p>
+                        </div>
+                        <div class="gallery-item">
+                            <a target="_blank" href="img/Locations/MHWilds-Ruins_of_Wyveria.png">
+                                <img src="img/Locations/MHWilds-Ruins_of_Wyveria.png" alt="">
+                            </a>
+                            <p class="desc">Ruins of Wyveria</p>
+                        </div>
+                        
+                    </div>
+            </div>
+        
+        </section>
+        
+            <!-- Type of damages -->
+
+        <section id="weaknesses">
+            <div class="table-divider">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nu Udra  Parts</th>
+                            <th><img src="img/damage/cut-damage-icon.png" alt=""></th>
+                            <th><img src="img/damage/blunt-damage-icon.png" alt=""></th>
+                            <th><img src="img/damage/ammo-damage-icon.png" alt=""></th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>Head</td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Membrane</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Mouth</td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Torso</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Tentacle</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Front Left Arm</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Front Right Arm</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Middle Left Arm</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Middle Right Arm</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Rear Left Arm</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Rear Right Arm</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            </tbody>
+                    </table>
+                </div>
+
+            <!-- Elements -->
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nu Udra Parts</th>
+                                <th><img src="img/elements/fire.png" alt=""></th>
+                                <th><img src="img/elements/water.png" alt=""></th>
+                                <th><img src="img/elements/thunder.png" alt=""></th>
+                                <th><img src="img/elements/ice.png" alt=""></th>
+                                <th><img src="img/elements/dragon.png" alt=""></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Head</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Membrane</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Mouth</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Torso</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Tentacle</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Front Left Arm</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Front Right Arm</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Middle Left Arm</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Middle Right Arm</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Rear Left Arm</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Rear Right Arm</td>
+                                <td>
+                                    <img src="img/damage/uneffective.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-divider">
+            
+                <!-- Aliments table -->
+                <div class="table-wrapper aliments">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Aliments</th>
+                            <th>Description </th>
+                            <th>Effectiveness</th>                   
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/poison.png" alt="">
+                                    <p>Poison</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p> Poison slowly drains the monster's health for a short amount of time	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/sleep_icon.png" alt="">
+                                    <p>Sleep</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>The monster slumbers a short while. Attacking will awaken it, but the first attack will do more damage.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/paralysis_icon.png" alt="">
+                                    <p>Paralysis</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>The monster is paralyzed and cannot move for a short amount of time	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/blastlight_icon.png" alt="">
+                                    <p>Blastblight</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Blast element builds as you attack. Once a certain threshold is reached, it detonates, causing damage.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/stun_status.png" alt="">
+                                    <p>Stun</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Attacking a monster's head many times with a blunt weapon will KO them, leaving them wide open.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/exhaust_status.png" alt="">
+                                    <p>Exhaust</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Once blunt damage buildup reaches a certain level, the monster will lose a portion of its stamina.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper aliments">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>Description </th>
+                            <th>Effectiveness</th>                   
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/flash_pod.png" alt="">
+                                    <p>Flash Pod</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Strong Flashes will dizzy or disorient a monster for a short period of time.</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/screamer_pod.png" alt="">
+                                    <p>Screamer pod</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Some monsters are startled by loud noises, prompting specific reactions from them.</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/shock_trap.png" alt="">
+                                    <p>Shock Trap</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>If a monster triggers a shock trap, it will be immobilized and open to attack for a short amount of time.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/pitfall_trap.png" alt="">
+                                    <p>Pitfall Trap</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>If a monster triggers a pitfall trap, it will become stuck and open to attack as it struggles to free itself.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="moveset">
+
+            <h2>Nu Udra Moveset</h2>
+
+            <div>
+                <h3>Charge Attack</h3>
+                <p>In its normal state, the Nu Udra can dash across the area to charge at targets. The movement is much slower compared to the Fiery state.</p>
+            </div>
+
+            <div>
+                <h3>Fiery Flame</h3>
+                <p>The head of the Nu Udra will start to glow blue, and after a while, the flame will surge throughout its body.</p>
+            </div>
+
+            <div>
+                <h3>Flame Breath</h3>
+                <p>Nu Udra breathes fire on the ground. The fire lasts for a few seconds and covers a medium-sized area.</p>
+            </div>
+
+            <div>
+                <h3>Fiery Barrage</h3>
+                <p>Nu Udra will gather rocks beneath it, cover them in fire, and then throw them in an area around it. The rocks will explode upon hitting the ground and leave trails of fire. </p>
+            </div>
+
+            <div>
+                <h3>Fiery Charge</h3>
+                <p>While Nu Udra is in its fiery state, it will dash across the zone to charge at units in front of it.</p>
+            </div>
+
+            <div>
+                <h3>Fiery Spin</h3>
+                <p>During the flame state, the Nu Udra will gather its tentacles around its body and use them to spin in place, while other tentacles will sweep to attack nearby targets.</p>
+            </div>
+
+            <div>
+                <h3>Fiery Tentacle Slam </h3>
+                <p>Improved and Fiery version of the Tentacle Slam. Using one of its tentacles, the Nu Udra will reach forward and slam it on the ground.</p>
+            </div>
+
+            <div>
+                <h3>Fiery Tentacle Sweep</h3>
+                <p>Improved and Fiery version of the Tentacle Sweep. The Nu Udra will sweep one of its tentacles across the area around it. When hit, it can cause the hunter to lose balance.</p>
+            </div>
+
+            <div>
+                <h3>Fiery Tentacle Swing</h3>
+                <p>Improved and Fiery version of the Tentacle Swing. After raising one of its tentacles for a few seconds, the Nu Udra will swing it across the ground.</p>
+            </div>
+
+            <div>
+                <h3>Tentacle Slam</h3>
+                <p>Using one of its tentacles, the Nu Udra will reach forward and slam it on the ground.</p>
+            </div>
+
+            <div>
+                <h3>Tentacle Sweep</h3>
+                <p>The Nu Udra will sweep one of its tentacles across the area around it. When hit, it can cause the hunter to lose balance.</p>
+            </div>
+
+            <div>
+                <h3>Tentacle Swing</h3>
+                <p>After raising one of its tentacles for a few seconds, the Nu Udra will swing it across the ground.</p>
+            </div>
+
+            <div>
+                <h3>Throw Attack</h3>
+                <p>Nu Udra will collect rock on one of its tentacles and then fling it at a target. During the fiery state, this rock will explode upon hitting the ground. It can perform this move up to 2 times in succession.</p>
+            </div>
+
+        </section>
+
+        <section id="drops">
+
+            <div>
+                <div class="lr-materials">
+                <h2>Low Rank</h2>
+                <p>The table below indicates the various materials or items obtained from the Low Rank version of Zoh Shia. It also includes the percentage chance of acquiring the materials.</p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Frequency</th>
+                            <th>Target Rewards</th>
+                            <th>Break Part Rewards</th>
+                            <th>Carves</th>
+                            <th>Wound Destroyed</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/nu-udra/drops/nu_udra_hide.png" alt="">
+                                    <p>Nu Udra Hide</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>25%</td>
+                            <td>-</td>
+                            <td>28%</td>
+                            <td>45%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/nu-udra/drops/nu_udra_oilmucus.png" alt="">
+                                    <p>Nu Udra Oilmucus</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            <td>25%</td>
+                            <td>-</td>
+                            <td>23%</td>
+                            <td>43%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/nu-udra/drops/nu_udra_horn.png" alt="">
+                                    <p>Nu Udra Horn</p>
+                                </div>
+                            </td>
+                            <td><img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>11%</td>
+                            <td>100%(Head)</td>
+                            <td>11%</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/nu-udra/drops/nu_udra_horn.png" alt="">
+                                    <p>Nu Udra Spike</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>15%</td>
+                            <td>-</td>
+                            <td>18%<br>35% (Arm)</td>
+                            <td>12%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/nu-udra/drops/nu_udra_tentacle.png" alt="">
+                                    <p>Nu Udra Tentacle</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>11%</td>
+                            <td>-</td>
+                            <td>13%<br>60% (Arm)</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/nu-udra/drops/nu_udra_certificate.png" alt="">
+                                    <p>Nu Udra Certificatee</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>8%</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/nu-udra/drops/nu_udra_cerebrospinal_fluid.png" alt="">
+                                    <p>Nu Udra Cerebrospinal Fluid</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>5%</td>
+                            <td>-</td>
+                            <td>7%<br>5%(Arm)</td>
+                            <td>-</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            
+            <div class="hr-materials">
+                <h2>High Rank</h2>
+                <p>The table below indicates the various materials or items obtained from the High Rank version of Rathalos. It also includes the percentage chance of acquiring the materials.</p>
+
+                <div class="table-wrapper">
+                    <table>
+                            <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Frequency</th>
+                                <th>Target Rewards</th>
+                                <th>Break Part Rewards</th>
+                                <th>Carves</th>
+                                <th>Wound Destroyed</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="name-material">
+                                        <img src="img/page/nu-udra/drops/nu_udra_hide.png" alt="">
+                                        <p>Nu Udra Hide +</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>22%</td>
+                                <td>-</td>
+                                <td>30%</td>
+                                <td>45%</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="name-material">
+                                        <img src="img/page/nu-udra/drops/nu_udra_horn.png" alt="">
+                                        <p>Nu Udra Horn +</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                <td>11%</td>
+                                <td>100% (Head)</td>
+                                <td>11%</td>
+                                <td>-</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="name-material">
+                                        <img src="img/page/nu-udra/drops/nu_udra_oilmucus.png" alt="">
+                                        <p>Nu Udra Oilmucus +</p>
+                                    </div>
+                                </td>
+                                <td><img src="img/damage/1_stars_damage.png" alt="">
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>22%</td>
+                                <td>-</td>
+                                <td>23%</td>
+                                <td>43%</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="name-material">
+                                        <img src="img/page/nu-udra/drops/nu_udra_horn.png" alt="">
+                                        <p>Nu Udra Spike +</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>16%</td>
+                                <td>-</td>
+                                <td>18%<br>38% (Arm)</td>
+                                <td>12%</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="name-material">
+                                        <img src="img/page/nu-udra/drops/nu_udra_tentacle.png" alt="">
+                                        <p>Nu Udra Tentacle +</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>11%</td>
+                                <td>-</td>
+                                <td>13%<br>60% (Arm)</td>
+                                <td>-</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="name-material">
+                                        <img src="img/page/nu-udra/drops/nu_udra_certificate.png" alt="">
+                                        <p>Nu Udra Certificate S</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>8%</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="name-material">
+                                        <img src="img/page/nu-udra/drops/nu_udra_cerebrospinal_fluid.png" alt="">
+                                        <p>Nu Udra Cerebrospinal Fluid</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>7%</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="name-material">
+                                        <img src="img/page/nu-udra/drops/nu_udra_flamegem.png" alt="">
+                                        <p>Nu Udra Flamegem</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                                <td>3%</td>
+                                <td>-</td>
+                                <td>5%<br>2%(Arm)</td>
+                                <td>-</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                </div>
+
+        </div>
+        
+        </section>
+    </div>
+</section>
+<script src="display.js"></script>
+</body>
+</html>

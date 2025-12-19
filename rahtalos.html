@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-rathalos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rathalos</title>
+</head>
+<body class="rathalos">
+<header>
+    <nav>
+        <a href="monster-categories.html">
+            <span class="material-symbols-outlined">arrow_left_alt</span>
+            <p>Back to Bestiary</p> 
+        </a>
+        <div class="nav-info">
+            <span class="badge-threat">Threat level 5</span>
+            <div class="badge-element">
+                <img class="element" src="img/elements/fire.png" alt="fire">
+                <span>Fire</span>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<section class="information">
+    <div class="side-bar">
+        <div>
+            <h2>Quick Facts</h2>
+            <img src="img/page/rathalos/icon-rathalos.png" alt="rathalos">
+
+            <div class="side-bar-content">
+                <h3>Enemy type:</h3>
+                <p>Large Monster</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Species:</h3>
+                <p>Flying wyvern</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Elements:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png">
+                    <p>Fire</p>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Aliments:</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Fireblight</span>
+                        </li>
+                        <li>
+                            <img src="img/aliments/poison.png" alt="poison">
+                            <span>Poison</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Weakness:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/dragon.png" alt="dragon">
+                    <span>Dragon</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Ressistance</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png" alt="fire">
+                    <span>Fire</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Location(s):</h3>
+                <ul>
+                    <li>
+                        <img src="img/Locations/scarlet-forest.png" alt="Scarlet-Forest">
+                        <span>Scarlet Fores</span>
+                    </li>
+                    <li>
+                        <img src="img/Locations/oilwell-basin.png" alt="Oilwell Basin">
+                        <span>Oilwell Basin</span>
+                    </li>
+                    <li>
+                        <img src="img/Locations/ruins-of-wyveria.png" alt="Ruins of Wyveria">
+                        <span>Ruins of Wyveria</span>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+
+        </div>
+    
+    <div class="main">
+        <div class="main-nav">
+            <a href="javascript:void(0);" id="overview-button" class="current" onclick="overview()">Overview</a>
+            <a href="javascript:void(0);" id="weaknesses-button" onclick="weaknesses()">Weaknesses</a>
+            <a href="javascript:void(0);" id="combat-button" onclick="combat()">Combat</a>
+            <a href="javascript:void(0);" id="materials-button" onclick="materials()">Materials</a>
+        </div>
+
+        <div class="side-bar-phone">
+            <h2>Quick Facts</h2>
+            <img class="monster-icon" src="img/page/rathalos/icon-rathalos.png" alt="rathalos">
+            <div class="side-bar-phone-divider">
+                <div>
+                    <div class="side-bar-phone-content">
+                        <h3>Enemy type:</h3>
+                        <p>Large Monster</p>
+                    </div>
+
+                    <div class="side-bar-phone-content">
+                        <h3>Species:</h3>
+                        <p>Leviathan</p>
+                    </div>
+
+                    <div class="side-bar-phone-content">
+                        <h3>Elements:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/fire.png">
+                            <p>Thunder</p>
+                        </div>
+                    </div>
+                
+                    <div class="side-bar-phone-content">
+                        <h3>Aliments:</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <img src="img/elements/fire.png" alt="fire">
+                                    <span>Thunderblight</span>
+                                </li>
+                                <li>
+                                    <img src="img/aliments/poison.png" alt="poison">
+                                    <span>Waterblight</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="side-bar-phone-content">
+                        <h3>Weakness:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/dragon.png" alt="dragon">
+                            <span>Fire</span>
+                        </div>
+                    </div>
+                    
+                    <div class="side-bar-phone-content">
+                        <h3>Resistance:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Thunder</span>
+                        </div>
+                    </div>
+                    
+                    <div class="side-bar-content">
+                        <h3>Location(s):</h3>
+                        <ul>
+                <li>
+                    <img src="img/Locations/scarlet-forest.png" alt="Scarlet-Forest">
+                    <span>Scarlet Fores</span>
+                </li>
+                <li>
+                    <img src="img/Locations/oilwell-basin.png" alt="Oilwell Basin">
+                    <span>Oilwell Basin</span>
+                </li>
+                <li>
+                    <img src="img/Locations/ruins-of-wyveria.png" alt="Ruins of Wyveria">
+                    <span>Ruins of Wyveria</span>
+                </li>
+            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="overview">
+        <div class="description">
+            <h2>Species Description</h2>
+            <p>Fearsome male wyverns known as the "King of the Skies." Alongside the Rathian, they stake out a wide territory around their nests, and it is the male's role to watch from above. Armed with powerful poisonous claws and fiery breath, Rathalos use their aerial prowess to descend to invaders.</p>
+        </div>
+            <div class="description">
+                <h2>Information</h2>
+                <p>Rathalos is a Large Monster in Monster Hunter Wilds (MHWilds). Rathalos is a Flying Wyvern that inflicts fire and poison status effects. It is the flagship monster of the series. Large Monsters such as Rathalos are hostile and are usually the primary objective of Hunts. They provide valuable Materials when defeated, that allow Hunters to craft gear.</p>
+            </div>
+
+            <div class="location">
+
+                <h2>Locations</h2>
+
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <a target="_blank" href="img/Locations/MHWilds-Scarlet_Forest.png">
+                                <img src="img/Locations/MHWilds-Scarlet_Forest.png" alt="">
+                            </a>
+                            <p class="desc">Scarlet Forest</p>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="img/Locations/MHWilds-Oilwell_Basin.png">
+                                <img src="img/Locations/MHWilds-Oilwell_Basin.png" alt="">
+                            </a>
+                            <p class="desc">Oilwell Basin</p>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="img/Locations/MHWilds-Ruins_of_Wyveria.png">
+                                <img src="img/Locations/MHWilds-Ruins_of_Wyveria.png" alt="">
+                            </a>
+                            <p class="desc">Ruins of Wyveria</p>
+                        </div>
+                    </div>
+            </div>
+        
+        </section>
+        
+            <!-- Type of damages -->
+
+        <section id="weaknesses">
+            <div class="table-divider">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Rathalos Parts</th>
+                            <th><img src="img/damage/cut-damage-icon.png" alt=""></th>
+                            <th><img src="img/damage/blunt-damage-icon.png" alt=""></th>
+                            <th><img src="img/damage/ammo-damage-icon.png" alt=""></th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>Head</td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Neck</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Torso</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Left Wing</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Right Wing</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Left Leg</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt=""></td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Right Leg</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Tail</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            </tbody>
+                    </table>
+                </div>
+
+            <!-- Elements -->
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Rathalos Parts</th>
+                            <th><img src="img/elements/fire.png" alt=""></th>
+                            <th><img src="img/elements/water.png" alt=""></th>
+                            <th><img src="img/elements/thunder.png" alt=""></th>
+                            <th><img src="img/elements/ice.png" alt=""></th>
+                            <th><img src="img/elements/dragon.png" alt=""></th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>Head</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Neck</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Torso</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Left Wing</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Right Wing</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Left Leg</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Right Leg</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Tail</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-divider">
+            
+                <!-- Aliments table -->
+                <div class="table-wrapper aliments">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Aliments</th>
+                            <th>Description </th>
+                            <th>Effectiveness</th>                   
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/poison.png" alt="">
+                                    <p>Poison</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p> Poison slowly drains the monster's health for a short amount of time	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/sleep_icon.png" alt="">
+                                    <p>Sleep</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>The monster slumbers a short while. Attacking will awaken it, but the first attack will do more damage.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/paralysis_icon.png" alt="">
+                                    <p>Paralysis</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>The monster is paralyzed and cannot move for a short amount of time	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/blastlight_icon.png" alt="">
+                                    <p>Blastblight</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Blast element builds as you attack. Once a certain threshold is reached, it detonates, causing damage.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/stun_status.png" alt="">
+                                    <p>Stun</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Attacking a monster's head many times with a blunt weapon will KO them, leaving them wide open.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/exhaust_status.png" alt="">
+                                    <p>Exhaust</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Once blunt damage buildup reaches a certain level, the monster will lose a portion of its stamina.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper aliments">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>Description </th>
+                            <th>Effectiveness</th>                   
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/flash_pod.png" alt="">
+                                    <p>Flash Pod</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Strong Flashes will dizzy or disorient a monster for a short period of time.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/screamer_pod.png" alt="">
+                                    <p>Screamer pod</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Some monsters are startled by loud noises, prompting specific reactions from them.</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/shock_trap.png" alt="">
+                                    <p>Shock Trap</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>If a monster triggers a shock trap, it will be immobilized and open to attack for a short amount of time.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/pitfall_trap.png" alt="">
+                                    <p>Pitfall Trap</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>If a monster triggers a pitfall trap, it will become stuck and open to attack as it struggles to free itself.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="moveset">
+
+            <h2>Rathalos Moveset</h2>
+
+            <div>
+                <h3>Aerial Flame Sweep</h3>
+                <p>While airborne, Rathalos will pull back both wings and raise its head while turning it to the right. After a quick pause, it will unleash its fiery breath that starts from the right going to the left. Rathalos can also do this move starting from the opposite side.</p>
+            </div>
+            
+            <div>
+                <h3>Aerial Flame Field</h3>
+                <p>While airborne, Rathalos will let out a roar as an orange glow forms inside its mouth. It will pull back its head and both wings on its sides. After a quick pause, it will aim at the ground directly beneath it to unleash a fiery breath. It will pause before swinging its head upwards. This attack leaves the ground burning for a few seconds.</p>
+            </div>
+
+            <div>
+                <h3>Aerial Fireball</h3>
+                <p>Rathalos takes flight, and then swings its body around with flames growing from its mouth. After a short while, it will launch 2 Fireballs at a target.</p>
+            </div>
+
+            <div>
+                <h3>Aerial Strafe</h3>
+                <p>While airborne, Rathalos will frequently reposition itself by flapping its wings.</p>
+            </div>
+
+            <div>
+                <h3>Aerial Tail Thrust</h3>
+                <p>While in the air, Rathalos will swing its tail backward, and then quickly thrust it forward.</p>
+            </div>
+
+            <div>
+                <h3>Fireball to Swoop</h3>
+                <p>Rathalos raises its head and wings as an orange glow forms inside its mouth. It will then shoot a fireball from its mouth, directly at the area in front of it while flapping its wings to push itself upward. Once airborne, Rathalos will swoop to attack a target in front of it.</p>
+            </div>
+
+            <div>
+                <h3>Fireball</h3>
+                <p>Rathalos raises its head and wings as the flames in its mouth glow brighter. After a while, he releases a fireball that travels in a straight line toward a target.</p>
+            </div>
+
+            <div>
+                <h3>Flame Breath</h3>
+                <p>Rathalos takes a step back with both wings extended on the sides. An orange glow will start to form inside its mouth and it will pull back its head as it takes another step backward. Rathalos will release Flame Breath in front of it and then to the left. When enraged, it can release up to 3 Flame Breaths consecutively.</p>
+            </div>
+
+            <div>
+                <h3>Ruthless Dash</h3>
+                <p>Rathalos dashes in a straight line towards its targets to trample them. Rathalos will take about 3-4 steps before stopping.</p>
+            </div>
+
+            <div>
+                <h3>Swoop Attack</h3>
+                <p>While airborne, Rathalos will swoop down at a target with its talons leading the landing.</p>
+            </div>
+
+            <div>
+                <h3>Tail Sweep</h3>
+                <p>Rathalos turns its head to its side while it prepares for the move. After a brief pause, Rathalos sweeps its tail behind him as his body turns. It can follow up with a second sweep, returning it to its original position. The sweep has a deceptively large radius and may affect a larger area than it appears.</p>
+            </div>
+
+            <div>
+                <h3>Talon Assault</h3>
+                <p>While airborne, Rathalos will flap its wings to push itself backward. Then, it will flap its wings once again to push itself forward to assault with both talons, before it lands on the ground.</p>
+            </div>
+
+            <div>
+                <h3>Talon Strike</h3>
+                <p>Rathalos quickly takes flight by jumping as it flaps its wings to bring itself airborne. Then, it will swoop down and strike a target using its talons.</p>
+            </div>
+
+            <div>
+                <h3>Talon Strike</h3>
+                <p>Rathalos quickly takes flight by jumping as it flaps its wings to bring itself airborne. Then, it will swoop down and strike a target using its talons.</p>
+            </div>
+        </section>
+
+        <section id="drops">
+
+            <div>
+                <div class="lr-materials">
+                <h2>Low Rank</h2>
+                <p><span>Rathalos</span> can only be found as a High  Rank encounter.</p>
+
+            </div>
+            
+            <div class="hr-materials">
+                <h2>High Rank</h2>
+                <p>The table below indicates the various materials or items obtained from the High Rank version of Rathalos. It also includes the percentage chance of acquiring the materials.</p>
+            
+            <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Frequency</th>
+                    <th>Target Rewards</th>
+                    <th>Break Part Rewards</th>
+                    <th>Carves</th>
+                    <th>Wound Destroyed</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/rathalos/drops/rathalos_wing.png" alt="">
+                            <p>Rathalos Wing</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>15%</td>
+                    <td>100% (Left Wing)<br>100% (Right Wing)</td>
+                    <td>18%</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/rathalos/drops/rathalos_scale.png" alt="">
+                            <p>Rathalos Scale +</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>20%</td>
+                    <td>-</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/rathalos/drops/rathalos_carapace.png" alt="">
+                            <p>Rathalos Carapace</p>
+                        </div>
+                    </td>
+                    <td><img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>20%</td>
+                    <td>-</td>
+                    <td>23%</td>
+                    <td>50%</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/rathalos/drops/rathalos_tail.png" alt="">
+                            <p>Rathalos Tail</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>3%</td>
+                    <td>-</td>
+                    <td>13%<br>80%(Tail)</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/rathalos/drops/inferno_sac.png" alt="">
+                            <p>Inferno Sac</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>18%</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/rathalos/drops/rathalos_certificate_s.png" alt="">
+                            <p>Rathalos Certificate S</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>8%</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/rathalos/drops/rath_medulla.png" alt="">
+                            <p>Rath Medulla</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>8%</td>
+                    <td></td>
+                    <td>11%<br>13% (Tail)</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/page/rathalos/drops/rathalos_ruby.png" alt="">
+                            <p>Rathalos Ruby</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>3%</td>
+                    <td>-</td>
+                    <td>5%<br>7% (Tail)</td>
+                    <td>-</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        </div>
+        
+        </section>
+    </div>
+</section>
+<script src="display.js"></script>
+</body>
+</html>

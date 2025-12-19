@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-zoh-shia.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoh Shia</title>
+</head>
+<body class="rathalos">
+<header>
+    <nav>
+        <a href="monster-categories.html">
+            <span class="material-symbols-outlined">arrow_left_alt</span>
+            <p>Back to Bestiary</p> 
+        </a>
+        <div class="nav-info">
+            <span class="badge-threat">Threat level 3</span>
+            <div class="badge-element">
+                <img class="element" src="img/elements/fire.png" alt="fire">
+                <span>Fire</span>
+                <img class="element" src="img/elements/thunder.png" alt="thunder">
+                <span>Thunder</span>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<section class="information">
+    <div class="side-bar">
+        <div>
+            <h2>Quick Facts</h2>
+            <img src="img/page/zog-shia/zoh_shia_icon.png" alt="rathalos">
+
+            <div class="side-bar-content">
+                <h3>Enemy type:</h3>
+                <p>Large Monster</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Species:</h3>
+                <p>Construct</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Elements:</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Fire</span>
+                        </li>
+                        <li>
+                            <img src="img/elements/thunder.png" alt="thunder">
+                            <span>Thunder</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Aliments:</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Fireblight</span>
+                        </li>
+                        <li>
+                            <img src="img/elements/thunder.png" alt="thunderblight">
+                            <span>Thunderblight</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Weakness:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/dragon.png" alt="dragon">
+                    <span>Dragon</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Ressistance</h3>
+                <span>--</span>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Location(s):</h3>
+                <ul>
+                    <li>
+                        <img src="img/Locations/ruins-of-wyveria.png" alt="Ruins of Wyveria">
+                        <span>Ruins of Wyveria</span>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+
+        </div>
+    
+    <div class="main">
+        <div class="main-nav">
+            <a href="javascript:void(0);" id="overview-button" class="current" onclick="overview()">Overview</a>
+            <a href="javascript:void(0);" id="weaknesses-button" onclick="weaknesses()">Weaknesses</a>
+            <a href="javascript:void(0);" id="combat-button" onclick="combat()">Combat</a>
+            <a href="javascript:void(0);" id="materials-button" onclick="materials()">Materials</a>
+        </div>
+
+        <div class="side-bar-phone">
+            <h2>Quick Facts</h2>
+            <img class="monster-icon" src="img/page/rathalos/icon-rathalos.png" alt="rathalos">
+            <div class="side-bar-phone-divider">
+                <div>
+                    <div class="side-bar-phone-content">
+                        <h3>Enemy type:</h3>
+                        <p>Large Monster</p>
+                    </div>
+
+                    <div class="side-bar-phone-content">
+                        <h3>Species:</h3>
+                        <p>Construct</p>
+                    </div>
+
+                    <div class="side-bar-phone-content">
+                        <h3>Elements:</h3>
+                        <div>
+                    <ul>
+                        <li>
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Fire</span>
+                        </li>
+                        <li>
+                            <img src="img/elements/thunder.png" alt="thunder">
+                            <span>Thunder</span>
+                        </li>
+                    </ul>
+                </div>
+                    </div>
+                
+                    <div class="side-bar-phone-content">
+                        <h3>Aliments:</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <img src="img/elements/fire.png" alt="fire">
+                                    <span>Fireblight</span>
+                                </li>
+                                <li>
+                                    <img src="img/elements/thunder.png" alt="thunderblight">
+                                    <span>Thunderblight</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="side-bar-phone-content">
+                        <h3>Weakness:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/dragon.png" alt="dragon">
+                            <span>Dragon</span>
+                        </div>
+                    </div>
+                    
+                    <div class="side-bar-phone-content">
+                        <h3>Resistance:</h3>
+                            <span>--</span>
+                    </div>
+                    
+                    <div class="side-bar-content">
+                        <h3>Location(s):</h3>
+                        <ul>
+                            <li>
+                                <img src="img/Locations/ruins-of-wyveria.png" alt="Ruins of Wyveria">
+                                <span>Ruins of Wyveria</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="overview">
+        <div class="description">
+            <h2>Species Description</h2>
+            <p>A massive Guardian that has been feeding off the Dragontorch's energy. Its body is encased in crystallized Wyvern Milk, allowing it to regenerate. Zoh Shia, like other Guardians, excels at energy attacks and can produce repeated explosions to crystallize the whole area. Beneath its white Guardian coat, its body pulses with dark recollection - which you may see, should it reveal its full power from the days of yore.</p>
+        </div>
+            <div class="description">
+                <h2>Information</h2>
+                <p>Zoh Shia is a Large Monster in Monster Hunter Wilds (MHWilds). Zoh Shia is a massive guardian that excels at energy attacks and can produce repeated explosions. Large Monsters such as Zoh Shia are hostile and are usually the primary objective of Hunts. They provide valuable Materials when defeated, that allow Hunters to craft gear.</p>
+            </div>
+
+            <div class="location">
+
+                <h2>Locations</h2>
+
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <a target="_blank" href="img/Locations/MHWilds-Ruins_of_Wyveria.png">
+                                <img src="img/Locations/MHWilds-Ruins_of_Wyveria.png" alt="">
+                            </a>
+                            <p class="desc">Ruins of Wyveria</p>
+                        </div>
+                    </div>
+            </div>
+        
+        </section>
+        
+            <!-- Type of damages -->
+
+        <section id="weaknesses">
+            <div class="table-divider">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Zoh Shia Parts</th>
+                            <th><img src="img/damage/cut-damage-icon.png" alt=""></th>
+                            <th><img src="img/damage/blunt-damage-icon.png" alt=""></th>
+                            <th><img src="img/damage/ammo-damage-icon.png" alt=""></th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>Head</td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Head (Crystallized)</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Neck</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Torso</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Left Foreleg</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Right Foreleg</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Left Wingarm</td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt=""></td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Right Wingarm</td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>L Wingarm (Crystallzed)</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>R Wingarm (Crystallzed)</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/1_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Left Hind Leg</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Right Hind Leg</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Tail</td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            </tbody>
+                    </table>
+                </div>
+
+            <!-- Elements -->
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Rathalos Parts</th>
+                            <th><img src="img/elements/fire.png" alt=""></th>
+                            <th><img src="img/elements/water.png" alt=""></th>
+                            <th><img src="img/elements/thunder.png" alt=""></th>
+                            <th><img src="img/elements/ice.png" alt=""></th>
+                            <th><img src="img/elements/dragon.png" alt=""></th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>Head</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Head (Crystallized)</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Neck</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Torso</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Left Foreleg</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Right Foreleg</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Left Wingarm</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Right Wingarm</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>L Wingarm (Crystallzed)</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>R Wingarm (Crystallzed)</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Lef Hind Leg</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Right Hind Leg</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Tail</td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-divider">
+            
+                <!-- Aliments table -->
+                <div class="table-wrapper aliments">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Aliments</th>
+                            <th>Description </th>
+                            <th>Effectiveness</th>                   
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/poison.png" alt="">
+                                    <p>Poison</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p> Poison slowly drains the monster's health for a short amount of time	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/sleep_icon.png" alt="">
+                                    <p>Sleep</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>The monster slumbers a short while. Attacking will awaken it, but the first attack will do more damage.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/paralysis_icon.png" alt="">
+                                    <p>Paralysis</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>The monster is paralyzed and cannot move for a short amount of time	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/blastlight_icon.png" alt="">
+                                    <p>Blastblight</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Blast element builds as you attack. Once a certain threshold is reached, it detonates, causing damage.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/stun_status.png" alt="">
+                                    <p>Stun</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Attacking a monster's head many times with a blunt weapon will KO them, leaving them wide open.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/exhaust_status.png" alt="">
+                                    <p>Exhaust</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Once blunt damage buildup reaches a certain level, the monster will lose a portion of its stamina.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper aliments">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>Description </th>
+                            <th>Effectiveness</th>                   
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/flash_pod.png" alt="">
+                                    <p>Flash Pod</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Strong Flashes will dizzy or disorient a monster for a short period of time.</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/screamer_pod.png" alt="">
+                                    <p>Screamer pod</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Some monsters are startled by loud noises, prompting specific reactions from them.</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/shock_trap.png" alt="">
+                                    <p>Shock Trap</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>If a monster triggers a shock trap, it will be immobilized and open to attack for a short amount of time.</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/pitfall_trap.png" alt="">
+                                    <p>Pitfall Trap</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>If a monster triggers a pitfall trap, it will become stuck and open to attack as it struggles to free itself.</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="moveset">
+
+            <h2>Zoh Shia Moveset</h2>
+
+            <div>
+                <h3>Arm Blast</h3>
+                <p>The Zoh Shia will plant its claws firmly on the ground as the white glow brightens around its arm. After a quick pause, it will pull back its arm and cause a blast on the ground.</p>
+                <ul>
+                    <li>
+                        <h3>Arm Stomp</h3>
+                        <p>The Arm Stomp is the simple version of the Arm Blast without the glowing white on its arm, and it also doesn't cause any blasts or explosions.</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>Arm Swing</h3>
+                <p>While on all fours, the Zoh Shia will quickly turn on its side, and it will use its wing to cover its face. While in this position, the wing tip will start to glow white. After a quick pause, Zoh Shia will swing its wing across on its side. This attack can cause an explosion. (There's also a variation of this attack that does not cause any blast or explosion, so there will be no white glows on its wing).</p>
+            </div>
+            
+            <div>
+                <h3>Crossed Wingblade</h3>
+                <p>The Zoh Shia will start howling and the tip of its wings will start to glow white and the monster will slowly rise to stand on its hindlegs. Once stood, the Zoh Shia will slam both wings downward and cause a blast in a moderately large area directly in front of it.</p>
+            </div>
+
+            <div>
+                <h3>Fireball</h3>
+                <p>While enraged, Zoh Shia will rise to stand on its hind legs while an orange glow forms inside its mouth. Once stood, it will unleash a Fireball directly in front of it. This attack also leaves a trail of fire on the ground.</p>
+            </div>
+            
+            <div>
+                <h3>Flame Ring</h3>
+                <p>When enraged, the Zoh Shia will rise to stand on its hind legs. Once stood, it will let out a roar and its head will start to glow orange-red. After a while, it will let out a high-pitched sound and then a roar. It will quickly face the ground directly beneath it, and unleash a Flame Breath forming a Flame Ring on its feet.</p>
+            </div>
+
+            <div>
+                <h3>Infernal Blast</h3>
+                <p>The Zoh Shia's claws will turn orange, and it will plant both claws into the ground while letting out a high-pitched sound. The flames will travel from its body and leak into the ground directly in front of it. After a while, Zoh Shia will release a blast of orange flames that travel further.</p>
+            </div>
+
+            <div>
+                <h3>Inferno</h3>
+                <p>While standing on its hindlegs, the monster will unleash a straight line of flame while it swings its head around, covering the zone in flames. After a while, the entire area will explode in flames.</p>
+                <ul>
+                    <li>
+                        <p>There's a version of this move where the initial move (Zone Blast) only affects a smaller area. In this version, Zoh Shia will skip the part where it swings its head around, and instead, will aim the flame breath directly below it, causing the white shards to explode.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Overhead Smash</h3>
+                <p>The right arm of Zoh Shia will begin to glow and the monster will raise it above its head while letting out a roar. Once the arm peaks above its head, Zoh Shia will smash it onto the ground causing a blast.</p>
+            </div>
+
+            <div>
+                <h3>Relentless Charge</h3>
+                <p>While on all fours, Zoh Shia will roar as it takes 3 steps back. After that, it will raise its right arm above its head and will charge forward ramming its head and body against its targets. Once it reaches its destination, it will pivot its body to face the opposite direction.</p>
+            </div>
+
+            <div>
+                <h3>Roar</h3>
+                <p>The Zoh Shia can let out a roar to interrupt the Hunter's actions.</p>
+            </div>
+
+            <div>
+                <h3>Tail Swing</h3>
+                <p>While facing away from its targets, the Zoh Shia will slightly raise its tail above its body right before it extends it to swing it around.</p>
+            </div>
+
+            <div>
+                <h3>Transformed Fireball</h3>
+                <p>This is a move that Zoh Shia does after its transformation. While on all fours, the Zoh Shia will appear to "shake off" its head as an orange glow forms inside its mouth. Its wings are up and high on both sides and it will let out a roar while facing the front. After this roar, it will release a fireball in front of it, to the right, and then a close-range Fireball in front of it.</p>
+                <ul>
+                    <li>
+                        <h3>Charged-Up Fireball</h3>
+                        <p>This is a follow-up attack that Zoh Shia does after it transforms. After releasing 3 Fireballs, Zoh Shia will rise to stand up on its hind legs while the orange glow forms inside its mouth. Once it stands, the orange glow will keep getting bigger and brighter, and then it will release a Charged-Up Fireball that can reach a longer distance. It can do this move up to 2 times consecutively. This attack can blow away hunters when hit directly.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Transformed Wing Blast</h3>
+                <p>Zoh Shia will clench the claws on its wing as it glows orange. After a quick pause, it will plant its claws firmly on the ground as the orange glow brightens around its wing. Soon after, the orange glow will leak into the ground, causing a blast as the monster pulls back its arms. The Blast will explode into multiple fireballs that will travel further.</p>
+            </div>
+
+            <div>
+                <h3>Transformed Wing Strike</h3>
+                <p>This is a move that Zoh Shia does after its transformation. While roaring, Zoh Shia will raise both wings (claws) above its body. The right wing will start to glow orange and soon after, it will strike the ground in front of it. Then, it will strike again using the same wing, before switching to the other side.</p>
+            </div>
+
+            <div>
+                <h3>White Ground Fissure</h3>
+                <p>The Zoh Shia's wings will turn white, and it will plant both claws into the ground while letting out a high-pitched sound. The white energy will travel from its body and leak into the ground directly in front of it. After a while, the white energy will explode, leaving a fissure. The force of this attack will cause Zoh Shia's body to be pushed backwards.</p>
+            </div>
+
+            <div>
+                <h3>White Ground Fissure (2.0)</h3>
+                <p>This is a variation of the White Ground Fissure where the Zoh Shia will scratch the ground sideways with both claws. So, instead of the fissure traveling in front of it, the White Energy will travel in a straight line across, leaving a long white fissure on the ground.</p>
+            </div>
+
+            <div>
+                <h3>Wing Strike and Sweep</h3>
+                <p>The Zoh Shia will let out a roar as it plants the tip of its wing (with claws) onto the ground. After the roar, it will pull it backwards to try and hit the hunters near its body.</p>
+            </div>
+
+            <div>
+                <h3>Wing Strike</h3>
+                <p>The Zoh Shia will step forward and then quickly strike the tip of its left wing (with claws onto the ground). As it pulls back the left wing, it will charge up the right wing, and then strike the ground while glowing white. The second attack can cause a Blast that can blow hunters away.</p>
+            </div>
+
+            <div>
+                <h3>Zone Blast to Inferno</h3>
+                <p>The Zoh Shia will rise to stand on its hindlegs while it looks above. After a while, it will quickly fly upward and stay airborne for a few seconds, releasing white energy in the zone. Once it lands, it will start to go down on all fours, and it will release more white energy. After it charges up, this move will cause a zone-wide blast, creating large shards of white energy to form. Then, Zoh Shia will quickly follow up with Inferno, where it will unleash a straight line of flame while it swings its head around. This will cause the entire zone to go up in flames.</p>
+            </div>
+        </section>
+
+        <section id="drops">
+
+            <div>
+                <div class="lr-materials">
+                <h2>Low Rank</h2>
+                <p>The table below indicates the various materials or items obtained from the Low Rank version of Zoh Shia. It also includes the percentage chance of acquiring the materials.</p>
+                
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Frequency</th>
+                            <th>Target Rewards</th>
+                            <th>Break Part Rewards</th>
+                            <th>Carves</th>
+                            <th>Wound Destroyed</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/zog-shia/drops/guardian_scale_.png" alt="">
+                                    <p>Guardian Scale Wing</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>???%</td>
+                            <td>???%</td>
+                            <td>???% (Part)</td>
+                            <td>???%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/zog-shia/drops/guardian_pelt.png" alt="">
+                                    <p>Guardian Pelt</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>???%</td>
+                            <td>???%</td>
+                            <td>???% (Part)</td>
+                            <td>???%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/zog-shia/drops/guardian_blood.png" alt="">
+                                    <p>Guardian Blood</p>
+                                </div>
+                            </td>
+                            <td><img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>???%</td>
+                            <td>???%</td>
+                            <td>???% (Part)</td>
+                            <td>???%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/zog-shia/drops/guardian_blood.png" alt="">
+                                    <p>Nourishing Extract</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>???%</td>
+                            <td>???%</td>
+                            <td>???% (Part)</td>
+                            <td>???%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/zog-shia/drops/tough_guardian_bone.png" alt="">
+                                    <p>Tough Guardian Bone</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>???%</td>
+                            <td>???%</td>
+                            <td>???% (Part)</td>
+                            <td>???%</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            
+            <div class="hr-materials">
+                <h2>High Rank</h2>
+                <p>The table below indicates the various materials or items obtained from the High Rank version of Rathalos. It also includes the percentage chance of acquiring the materials.</p>
+            
+                <div class="table-wrapper">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Frequency</th>
+                        <th>Target Rewards</th>
+                        <th>Break Part Rewards</th>
+                        <th>Carves</th>
+                        <th>Wound Destroyed</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="name-material">
+                                <img src="img/page/zog-shia/drops/zoh_shia_stakeclaw.png alt="">
+                                <p>Zoh Shia Stakeclaw</p>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                        </td>
+                        <td>18%</td>
+                        <td>100% (left Foreleg)<br>100% (Right Foreleg)</td>
+                        <td>16%</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="name-material">
+                                <img src="img/page/zog-shia/drops/blackember_mass.png" alt="">
+                                <p>Blackember Mass</p>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                        </td>
+                        <td>15%</td>
+                        <td>100% (Left Wingarm)<br>100% (Right Wingarm)</td>
+                        <td>13%</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="name-material">
+                                <img src="img/page/zog-shia/drops/zoh_shia_stakeclaw.png" alt="">
+                                <p>Zoh Shia Crystalhorn</p>
+                            </div>
+                        </td>
+                        <td><img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                        </td>
+                        <td>8%</td>
+                        <td>100% (Head)</td>
+                        <td>11%</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="name-material">
+                                <img src="img/page/zog-shia/drops/zoh_shia_crystaltail.png" alt="">
+                                <p>Zoh Shia Crystaltail</p>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                        </td>
+                        <td>8%</td>
+                        <td>-</td>
+                        <td>11%<br>93%(Tail)</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="name-material">
+                                <img src="img/page/zog-shia/drops/guardian_blood.png" alt="">
+                                <p>Guardian Blood +</p>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                        </td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>30%</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="name-material">
+                                <img src="img/page/zog-shia/drops/guardian_scale_.png" alt="">
+                                <p>Zoh Shia Crystalscale</p>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                        </td>
+                        <td>20%</td>
+                        <td>-</td>
+                        <td>24%</td>
+                        <td>40%</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="name-material">
+                                <img src="img/page/zog-shia/drops/zoh_shia_layershell.png" alt="">
+                                <p>Zoh Shia Layershell</p>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                        </td>
+                        <td>20%</td>
+                        <td></td>
+                        <td>22%</td>
+                        <td>30%</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="name-material">
+                                <img src="img/page/zog-shia/drops/zoh_shia_certificate_s.png" alt="">
+                                <p>Zoh Shia Certificate S</p>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                        </td>
+                        <td>8%</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="name-material">
+                                <img src="img/page/zog-shia/drops/faux_whitegleam_orb.png" alt="">
+                                <p>Rathalos Ruby</p>
+                            </div>
+                        </td>
+                        <td>
+                            <img src="img/damage/1_stars_damage.png" alt="">
+                        </td>
+                        <td>3%</td>
+                        <td>-</td>
+                        <td>5%<br>7% (Tail)</td>
+                        <td>-</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        
+        </section>
+    </div>
+</section>
+<script src="display.js"></script>
+</body>
+</html>

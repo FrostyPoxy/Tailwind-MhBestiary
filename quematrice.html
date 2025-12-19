@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-quematrice.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatacabra</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="monster-categories.html">
+            <span class="material-symbols-outlined">arrow_left_alt</span>
+            <p>Back to Bestiary</p> 
+        </a>
+        <div class="nav-info">
+            <span class="badge-threat">Threat level 1</span>
+            <div class="badge-element">
+                <img class="element" src="img/elements/fire.png" alt="fire">
+                <span>Fire</span>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<section class="information">
+    <div class="side-bar">
+            <h2>Quick Facts</h2>
+            <img src="img/page/quematrice/quematrice_icon.png" alt="quematrice">
+
+            <div class="side-bar-content">
+                <h3>Enemy type:</h3>
+                <p>Large Monster</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Species:</h3>
+                <p>Brute Wyvern</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Elements:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png" alt="fire">
+                    <span>Fire</span>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Aliments:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png" alt="fireblight">
+                    <span>Fireblight</span>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Weakness:</h3>
+                <div>
+                    <li>
+                        <img src="img/elements/water.png" alt="water">
+                        <span>Water</span>
+                    </li>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Resistance:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png" alt="fire">
+                    <span>Fire</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Location(s):</h3>
+                <ul>
+                    <li>
+                        <img src="img/Locations/windward_plains.png" alt="Windward Plains">
+                        <span>Windward Plains</span>
+                    </li>
+                    <li>
+                        <img src="img/Locations/ruins-of-wyveria.png" alt="Ruins of Wyveria">
+                        <span>Ruins of Wyveria</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    <div class="main">
+        <div class="main-nav">
+            <a href="javascript:void(0);" id="overview-button" class="current" onclick="overview()">Overview</a>
+            <a href="javascript:void(0);" id="weaknesses-button" onclick="weaknesses()">Weaknesses</a>
+            <a href="javascript:void(0);" id="combat-button" onclick="combat()">Combat</a>
+            <a href="javascript:void(0);" id="materials-button" onclick="materials()">Materials</a>
+        </div>
+
+         <div class="side-bar-phone">
+            <h2>Quick Facts</h2>
+            <img class="monster-icon" src="img/page/quematrice/quematrice_icon.png" alt="lagiacrus">
+            <div class="side-bar-phone-divider">
+                <div>
+                    <div class="side-bar-phone-content">
+                        <h3>Enemy type:</h3>
+                        <p>Large Monster</p>
+                    </div>
+
+                    <div class="side-bar-phone-content">
+                        <h3>Species:</h3>
+                        <p>Brute Wyvern</p>
+                    </div>
+
+                    <div class="side-bar-phone-content">
+                        <h3>Elements:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Fire</span>
+                        </div>
+                    </div>
+                
+                    <div class="side-bar-phone-content">
+                        <h3>Aliments:</h3>
+                        <div class="monster-info-row">
+                            <img src="img/elements/fire.png" alt="fireblight">
+                            <span>Fireblight</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="side-bar-phone-content">
+                        <h3>Weakness:</h3>
+                        <div>
+                            <img src="img/elements/water.png" alt="water">
+                            <span>Water</span>
+                        </div>
+                    </div>
+                    
+                    <div class="side-bar-phone-content">
+                        <h3>Resistance:</h3>
+                        <div class="monster-info-row">
+                    <img src="img/elements/fire.png" alt="fire">
+                    <span>Fire</span>
+                </div>
+                    </div>
+                    
+                    <div class="side-bar-content">
+                        <h3>Location(s):</h3>
+                        <ul>
+                            <li>
+                                <img src="img/Locations/windward_plains.png" alt="Windward Plains">
+                                <span>Windward Plains</span>
+                            </li>
+                            <li>
+                                <img src="img/Locations/ruins-of-wyveria.png" alt="Ruins of Wyveria">
+                                <span>Ruins of Wyveria</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="overview">
+        <div class="description">
+            <h2>Species Description</h2>
+            <p>Brute wyverns with disproportionately long tails. They spread a flammable substance which vaporizes quickly, then ignite it by dragging their tails along the ground. By nature, Quematrice rarely hunt their own prey, and instead scavenge herbivore carrion left behind by other predators. This often leads to confrontations with other, smaller carnivores.</p>
+        </div>
+        <div>
+
+        <div class="description">
+            <h2>Information</h2>
+            <p>Quematrice is a Large Monster in Monster Hunter Wilds (MHWilds). Quematrice is a Brute Wyvern that resides in the Windward Plains and Ruins of Wyveria. Large Monsters such as Quematrice are hostile and are usually the primary objective of Hunts. They provide valuable Materials when defeated, that allow Hunters to craft gear.</p>
+        </div>
+
+        <div class="location">
+
+            <h2>Locations</h2>
+
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <a target="_blank" href="img/Locations/windward-plains-desert.png">
+                            <img src="img/Locations/windward-plains-desert.png" alt="">
+                        </a>
+                        <p class="desc">Windward Plains</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <a target="_blank" href="img/Locations/MHWilds-Ruins_of_Wyveria.png">
+                            <img src="img/Locations/MHWilds-Ruins_of_Wyveria.png" alt="">
+                        </a>
+                        <p class="desc">Ruins of Wyveria</p>
+                    </div>
+                </div>
+        </div>
+        
+        </section>
+        
+            <!-- Type of damages -->
+
+        <section id="weaknesses">
+            <div class="table-divider">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Quematrice  Parts</th>
+                            <th><img src="img/damage/cut-damage-icon.png" alt=""></th>
+                            <th><img src="img/damage/blunt-damage-icon.png" alt=""></th>
+                            <th><img src="img/damage/ammo-damage-icon.png" alt=""></th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>Head</td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Torso</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Left Foreleg</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Right Foreleg</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Left Hind Leg</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Right Hind Leg</td>
+                                <td>
+                                    <img src="img/damage/3_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/2_stars_damage.png" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Tail</td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="img/damage/4_stars_damage.png" alt="">
+                                </td>
+
+                            </tr>
+
+                            </tbody>
+                    </table>
+                </div>
+
+            <!-- Elements -->
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Quematrice Parts</th>
+                            <th><img src="img/elements/fire.png" alt=""></th>
+                            <th><img src="img/elements/water.png" alt=""></th>
+                            <th><img src="img/elements/thunder.png" alt=""></th>
+                            <th><img src="img/elements/ice.png" alt=""></th>
+                            <th><img src="img/elements/dragon.png" alt=""></th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>Head</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Torso</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Left Foreleg</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Right Foreleg</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>Left Hind Leg</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Right Hind Leg</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Tail</td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-divider">
+            
+                <!-- Aliments table -->
+                <div class="table-wrapper aliments">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Aliments</th>
+                            <th>Description </th>
+                            <th>Effectiveness</th>                   
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/poison.png" alt="">
+                                    <p>Poison</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p> Poison slowly drains the monster's health for a short amount of time	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/3_stars_damage.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/sleep_icon.png" alt="">
+                                    <p>Sleep</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>The monster slumbers a short while. Attacking will awaken it, but the first attack will do more damage.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/paralysis_icon.png" alt="">
+                                    <p>Paralysis</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>The monster is paralyzed and cannot move for a short amount of time	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/3_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/blastlight_icon.png" alt="">
+                                    <p>Blastblight</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Blast element builds as you attack. Once a certain threshold is reached, it detonates, causing damage.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/stun_status.png" alt="">
+                                    <p>Stun</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Attacking a monster's head many times with a blunt weapon will KO them, leaving them wide open.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/aliments/exhaust_status.png" alt="">
+                                    <p>Exhaust</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Once blunt damage buildup reaches a certain level, the monster will lose a portion of its stamina.	</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/2_stars_damage.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-wrapper aliments">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>Description </th>
+                            <th>Effectiveness</th>                   
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/flash_pod.png" alt="">
+                                    <p>Flash Pod</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Strong Flashes will dizzy or disorient a monster for a short period of time.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/screamer_pod.png" alt="">
+                                    <p>Screamer pod</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>Some monsters are startled by loud noises, prompting specific reactions from them.</p>
+                            </td>
+                            <td>
+                                <img src="img/damage/uneffective.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/shock_trap.png" alt="">
+                                    <p>Shock Trap</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>If a monster triggers a shock trap, it will be immobilized and open to attack for a short amount of time.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="first-tabel-icon">
+                                    <img src="img/Items/pitfall_trap.png" alt="">
+                                    <p>Pitfall Trap</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p>If a monster triggers a pitfall trap, it will become stuck and open to attack as it struggles to free itself.</p>
+                            </td>
+                            <td>
+                                <img src="img/Items/effective.png" alt="">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="moveset">
+
+            <h2>Quematrice Moveset</h2>
+
+            <div>
+                <h3>Pecking Attack</h3>
+                <p>The Quematrice will perform a series of pecks with its beck. It can do this move up to 4 times in succession.</p>
+            </div>
+            
+            <div>
+                <h3>Beak Sweep</h3>
+                <p>After pausing briefly, the Quematrice will perform a sweep attack from the side with its beak.</p>
+            </div>
+
+            <div>
+                <h3>Tail Slam</h3>
+                <p>The Quematrice will slam its feathery tail on the ground which can blow away units that it hits.</p>
+            </div>
+
+            <div>
+                <h3>Tail Sweep</h3>
+                <p>Using the tail, the Quematrice will perform a sweeping attack as it turns the whole body. It can blow away Palicoes if it hits them.</p>
+            </div>
+
+            <div>
+                <h3>Fireblight Tail Sweep</h3>
+                <p>This attack is similar to the Tail Sweep but is empowered by the Fire Element which ignites the ground hit by the ends of the tail.</p>
+            </div>
+
+            <div>
+                <h3>Rush Attack</h3>
+                <p>The Quematrice backs away, pauses briefly, and then rushes forward with its mouth wide open.</p>
+            </div>
+
+            <div>
+                <h3>Spin and Sweep</h3>
+                <p>This attack is a combination of a spinning move and a tail sweep at the end. The Quematrice will tuck its tail covering its hindleg and after spinning, it will sweep its tail upward.</p>
+            </div>
+
+        </section>
+
+        <section id="drops">
+
+            <div>
+                <div class="lr-materials">
+                <h2>Low Rank</h2>
+                <p>The table below indicates the various materials or items obtained from the Low Rank version of Quematrice. It also includes the percentage chance of acquiring the materials.</p>
+                
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Frequency</th>
+                            <th>Target Rewards</th>
+                            <th>Break Part Rewards</th>
+                            <th>Carves</th>
+                            <th>Wound Destroyed</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_scale.png" alt="">
+                                    <p>Quematrice Scale</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>25%</td>
+                            <td>-</td>
+                            <td>33%</td>
+                            <td>45%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_hide.png" alt="">
+                                    <p>Quematrice Hide</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>25%</td>
+                            <td>-</td>
+                            <td>23%</td>
+                            <td>43%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_crest.png" alt="">
+                                    <p>Quematrice Crest</p>
+                                </div>
+                            </td>
+                            <td><img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>14%</td>
+                            <td>100% (Head)</td>
+                            <td>15%</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_tail.png" alt="">
+                                    <p>Quematrice Tail</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>8%</td>
+                            <td>-</td>
+                            <td>11%<br>100% (Tail)</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_igniter.png" alt="">
+                                    <p>Quematrice Igniter</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>20%</td>
+                            <td>-</td>
+                            <td>18%</td>
+                            <td>12%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_certificate.png" alt="">
+                                    <p>Quematrice Certificate</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>8%</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            
+            <div class="hr-materials">
+                <h2>High Rank</h2>
+                <p>The table below indicates the various materials or items obtained from the High Rank version of Quematrice. It also includes the percentage chance of acquiring the materials.</p>
+            
+            <div class="table-wrapper">
+            <table>
+                        <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Frequency</th>
+                            <th>Target Rewards</th>
+                            <th>Break Part Rewards</th>
+                            <th>Carves</th>
+                            <th>Wound Destroyed</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_scale.png" alt="">
+                                    <p>Quematrice Scale</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>25%</td>
+                            <td>-</td>
+                            <td>33%</td>
+                            <td>45%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_hide.png" alt="">
+                                    <p>Quematrice Hide</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>25%</td>
+                            <td>-</td>
+                            <td>23%</td>
+                            <td>43%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_crest.png" alt="">
+                                    <p>Quematrice Crest</p>
+                                </div>
+                            </td>
+                            <td><img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>14%</td>
+                            <td>100% (Head)</td>
+                            <td>15%</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_tail.png" alt="">
+                                    <p>Quematrice Tail</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>8%</td>
+                            <td>-</td>
+                            <td>11%<br>100% (Tail)</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_igniter.png" alt="">
+                                    <p>Quematrice Igniter</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>20%</td>
+                            <td>-</td>
+                            <td>18%</td>
+                            <td>12%</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_certificate.png" alt="">
+                                    <p>Quematrice Certificate</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>8%</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="name-material">
+                                    <img src="img/page/quematrice/drops/quematrice_certificate.png" alt="">
+                                    <p>Quematrice Certificate</p>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/damage/1_stars_damage.png" alt="">
+                            </td>
+                            <td>3%</td>
+                            <td>-</td>
+                            <td>5%<br>7% (Tail)</td>
+                            <td>-</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        
+        </section>
+    </div>
+</section>
+<script src="display.js"></script>
+</body>
+</html>

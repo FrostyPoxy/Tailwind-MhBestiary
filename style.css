@@ -248,8 +248,8 @@ div.box-config {
     background-color: rgba(7, 7, 7, 0.715);
     border-radius: 16px;
     text-align: center;
-    width: 28vw;
-    padding: 1em;
+    
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
