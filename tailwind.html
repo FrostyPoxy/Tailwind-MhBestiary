@@ -10,7 +10,7 @@
     <title>Monster Hunter Bestiary</title>
 </head>
 
-<body class="text-2xl">
+<body>
     <header>
         <nav class="h-24">
             <div class="logo">
@@ -32,7 +32,7 @@
 
     <section class="discoveries">
         <div class="discoveries-heading">
-            <h2>What You'll Discover</h2>
+            <h2 class="text-6xl">What You'll Discover</h2>
             <p>A comprehensive research database containing detailed information on every creature in Monster Hunter Wilds.</p>
         </div>
         <div class="discoveries-info">
@@ -92,79 +92,51 @@
 
     <section id="category">
         <div class="pt-5 bg-gray-900 w-full" id="pricing">
-    <div class="w-full pb-20 mt-4 px-4"> 
-        
-        <div class="w-full text-center">
-            <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Monster Categories</p>
-        </div>
-        <p class="mx-auto mt-6 max-w-2xl text-center subheading leading-8 text-gray-300">Explore different types of creatures organized by their biological classifications.</p>
-        
-        <div class="isolate mt-10 flex flex-col lg:flex-row gap-8 w-full">
-        
-            <div class="box-config flex-1 bg-black ring-1 ring-white/10 rounded-3xl p-10 xl:p-12">
-                <div class="flex items-center justify-between gap-x-4">
-                    <h2 class="text-lg font-bold leading-8 text-white">Flying Wyvern</h2>
-                    <span class="rounded-xl bg-orange-500 px-2.5 py-1 text-lg font-semibold leading-5 text-white">5 Species</span>
-                </div>
-                <p class="mt-8 leading-6 text-gray-300">These monsters are larger monsters that can be bipedal or quadrupedal and have large, powerful wings that allow them to travel within the region.</p>
-                <a href="tailwind-categories.html" class="bg-gray-800 text-white hover:bg-gray-700 mt-10 block rounded-md py-2 px-3 text-center  font-semibold leading-6">Learn More</a>
-            </div>
-
-            <div class="box-config flex-1 bg-black ring-1 ring-white/10 rounded-3xl p-10 xl:p-12">
-                <div class="flex items-center justify-between gap-x-4">
-                    <h2 class="text-lg font-bold leading-8 text-white">Leviathans</h2>
-                    <span class="rounded-xl bg-cyan-500 px-2.5 py-1 text-lg font-semibold leading-5 text-white">6 Species</span>
-                </div>
-                <p class="mt-8 leading-6 text-gray-300">These monsters may be considered as large wyverns but with serpent-type bodies.</p>
-                <a href="tailwind-categories.html" class="bg-gray-800 text-white hover:bg-gray-700 mt-10 block rounded-md py-2 px-3 text-center  font-semibold leading-6">Learn More</a>
-            </div>
-
-            <div class="box-config flex-1 bg-black ring-1 ring-white/10 rounded-3xl p-10 xl:p-12">
-                <div class="flex items-center justify-between gap-x-4">
-                    <h2 class="text-lg font-bold leading-8 text-white">Fanged Beasts</h2>
-                    <span class="rounded-xl bg-purple-600 px-2.5 py-1 text-lg font-semibold leading-5 text-white">6 Species</span>
-                </div>
-                <p class="mt-8 leading-6 text-gray-300">These monsters are large beasts that don't have wings but some may have the ability to glide, they are also much faster than other large monsters.</p>
-                <a href="tailwind-categories.html" class="bg-gray-800 text-white hover:bg-gray-700 mt-10 block rounded-md py-2 px-3 text-center  font-semibold leading-6">Learn More</a>
-            </div>
+            <div class="w-full pb-20 mt-4 px-4"> 
             
-        </div>
-    </div>
-</div>
-    </section>
+                <div class="w-full text-center">
+                    <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Monster Categories</p>
+                </div>
+                <p class="mx-auto mt-6 max-w-2xl text-center subheading leading-8 text-gray-300">Explore different types of creatures organized by their biological classifications.</p>
+                
+                <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                        <!-- First Product -->
+                    <div class="flex flex-col justify-between bg-white/5 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
+                        <div class="flex items-center justify-between gap-x-4">
+                        <h2 class="text-4xl font-semibold leading-8 text-white">Flying Wyvern</h2>
+                        <p class="rounded-full bg-linear-to-br from-orange-400 via-pink-500 to-purple-600 px-2.5 py-1 text-xs font-semibold leading-5 text-white">5 Species</p>
+                        </div>
+                        <p class="mt-4 text-lg leading-6 text-gray-300">These monsters are larger monsters that can be bipedal or quadrupedal and have large, powerful wings that allow them to travel within the region.</p>
+                        <p class="mt-6 flex items-baseline gap-x-1">
+                        </p>
+                        <a href="tailwind-categories.html" class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-offset-2">Learn More</a>
+                    </div>
 
-    <!-- <section id="category">
-        <div class="category-heading">
-            <h4>Monster Categories</h4>
-            <p>Explore different types of creatures organized by their biological classifications.</p>
-        </div>
-        <div class="category-boxes">    
-            <div class="box-config">    
-                <div class="box-config-heading">
-                    <p class="name">Flying Wyvern</p>
-                    <p class="flying-wywern">5 Species</p>
+                    <!-- Second Product -->
+                    <div class="flex flex-col justify-between bg-white/5 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
+                        <div class="flex items-center justify-between gap-x-4">
+                            <h2 class="text-4xl font-semibold leading-8 text-white">Leviathans</h2>
+                            <p class="rounded-full bg-linear-to-br from-orange-400 via-pink-500 to-purple-600 px-2.5 py-1 text-xs font-semibold leading-5 text-white">6 Species</p>
+                        </div>
+                        <p class="mt-4 text-lg leading-6 text-gray-300">These monsters may be considered as large wyverns but with serpent-type bodies,</p>
+                        <p class="mt-6 flex items-baseline gap-x-1"></p>
+                        <a href="tailwind-categories.html" class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-offset-2">Learn More</a>
+                    </div> 
+
+                    <!-- Third Product -->
+                    <div class="flex flex-col justify-between bg-white/5 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
+                        <div class="flex items-center justify-between gap-x-4">
+                        <h2 class="text-4xl font-semibold leading-8 text-white">Fanged Beasts</h2>
+                        <p class="rounded-full bg-linear-to-br from-orange-400 via-pink-500 to-purple-600 px-2.5 py-1 text-xs font-semibold leading-5 text-white">6 Species</p>
+                        </div>
+                        <p class="mt-4 text-lg leading-6 text-gray-300">These monsters are large beasts that don't have wings but some may have the ability to glide, they are also much faster than other large monsters.</p>
+                        <p class="mt-6 flex items-baseline gap-x-1"></p>
+                        <a href="tailwind-categories.html" class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-offset-2">Learn More</a>
+                    </div>
                 </div>
-                <p>These monsters are larger monsters that can be bipedal or quadrupedal and have large, powerful wings that allow them to travel within the region.</p>
-                <a href="monster-categories.html">Learn More</a>
-            </div>
-            <div class="box-config">
-                <div class="box-config-heading">
-                    <p class="name">Leviathans</p>
-                    <p class="leviathans">6 Species</p>
-                </div>
-                <p>These monsters may be considered as large wyverns but with serpent-type bodies,</p>
-                <a href="monster-categories.html">Learn More</a>
-            </div>
-            <div class="box-config">
-                <div class="box-config-heading">
-                    <p class="name">Fanged Beasts</p>
-                    <p class="fanged-beasts">6 Species</p>
-                </div>
-                <p>These monsters are large beasts that don't have wings but some may have the ability to glide, they are also much faster than other large monsters.</p>
-                <a href="monster-categories.html">Learn More</a>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section id="journey"">
         <h5>Begin Your Research Journey</h5>

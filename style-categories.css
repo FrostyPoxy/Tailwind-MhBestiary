@@ -6,8 +6,7 @@ body {
 }
 
 nav {
-    background-color:#ad5d5d;
-    background-image: linear-gradient(to right, #ad5d5d ,#92b6d5, #af9483);
+    background-color:rgba(58, 49, 31, 0.95);
     position: fixed;        
     text-align: center;
     width: 100%;
@@ -83,44 +82,44 @@ section{
     width: 16%;
     height: 100%;
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    background-color:#ad5d5d;
-    background-image: linear-gradient(to bottom,#ad5d5d ,#6A89A8,#7E6BAE, #C89092);
-    gap: 10px;
+    background-color:#2a2b2c;
     z-index: 3;
 }
 
-#side-bar > * {
+#side-bar div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2em;
+    background-color: rgba(58, 49, 31, 0.5);
+    margin-left: 1em;
+    padding-bottom: 5dvh;
+    border-radius: 10px;
+    padding-top: 2em;
+}
+
+#side-bar div > * {
     margin-left: 15px;   
     margin-right: 15px;
 }
 
-#side-bar h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-block-end: 0.67em;
-}
 
 
 #side-bar button {
     text-decoration: none;
     padding: 8px;
-    font-size: 1.4rem;
+    font-size: 1em;
     font-weight: bold;
-
     border: none;
     outline: none;
-    background-color: whitesmoke;
-    color: rgb(46, 44, 44);
+    color: whitesmoke;
+    background-color: #1C1A16;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 #side-bar button.current {
     background-color: #8A6CFF;
-    border-radius: 10px;
-    font-weight: bold;
 }
 
 #side-bar button:hover {
@@ -138,25 +137,17 @@ section{
     grid-template-columns:  repeat(4, 1fr);
 }
 
-.main a.card {
-    color: white;
-    margin-left: 15px;
-    margin-top: 25px;
-    margin-right: 15px;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
 .main a:hover {
     transform: scale(1.05);
 }
 
 .card {
-  display: none;
-  background-color: #222;
-  background-image: linear-gradient(to bottom right,#6f83a1 ,#8C6B42,#aa8534);
-  color: white;
-  border-radius: 10px;
+    display: none;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    box-shadow: 2.5px 2.5px 3px 3px #202020;
+    margin: 25px 15px 0 15px;
 }
 
 .main .show {
@@ -166,17 +157,15 @@ section{
 .card-image {
   position: relative;
   z-index: 1;
+  background-image: linear-gradient(to bottom right,#6f83a1 ,#8C6B42,#aa8534);
+  padding: 10px; 
 }
 
 .card-image .back {
   width: 100%;
   min-height: 30vh;
   max-height: 35vh;
-}
-
-.back {
-    
-height: 38vh;
+  z-index: 0;
 }
 
 .card-image .element {
@@ -190,16 +179,16 @@ height: 38vh;
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 12px;
-  right: 0.1em;
+  right: 1em;
 }
 
 .badge-threat {
     padding: 0.15rem;
     border-radius: 5px;
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: 1em;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .badge-threat-5 {
@@ -239,8 +228,8 @@ height: 38vh;
 
 .badge-element {
     background-color: rgba(0, 0, 0, 0.801);
-    bottom: 0;
-    left: 0;
+    left: 0.5em;
+    bottom: 0.5em;
     position: absolute;
     display: flex;
     padding: 0.15rem;
@@ -249,8 +238,10 @@ height: 38vh;
 }
 
 .card-content {
-  padding: 10px;
-   margin-top: 1em;
+    padding: 1em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    overflow: hidden;
 }
 
 #fanged-beast, #amphibian, #demi-elder, #temnocerant, #cephalopod,
@@ -273,9 +264,7 @@ height: 38vh;
 
 .location {
     font-size: 16px; 
-    display: flex;   
-    align-items: baseline; 
-    padding-bottom: 1rem;
+    display: flex;    
 }
 
 .location img {
@@ -333,19 +322,24 @@ height: 38vh;
 
     .location {
         font-size: 26px; 
-            
+        display: flex;    
     }
     .tag {
         font-size: 24px;
         display: flex;
         justify-content: space-between;
-    }
+
+}
     
 }
 
 @media (max-width: 1024px) {
     .main {
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns:  repeat(3, 1fr);
+    }
+
+    #side-bar h1 {
+        font-size: 26px;
     }
 }
 
@@ -354,11 +348,23 @@ height: 38vh;
         display: none;
         width: 40%;
         margin-top: 1em;
+        justify-content: center;
     }
+
+    #side-bar div {
+        margin-top: 1em;
+        margin-left: 0;
+    }
+
+    #side-bar button {
+        font-size: 1.5em;
+    }
+
 
     #side-bar h1 {
         display: none;
     }
+
 
     #side-bar .top {
         margin-top: 1em;
@@ -380,6 +386,11 @@ height: 38vh;
 }
 
 @media (max-width: 425px){
+
+    #side-bar {
+        width: 65%;
+    }
+
     .main {
         grid-template-columns: auto;
     }
@@ -389,6 +400,10 @@ height: 38vh;
 @media (max-width: 320px){
     h1 {
         font-size: 1.5em;
+    }
+
+    #side-bar {
+        width: 75%;
     }
 
     #side-bar {
