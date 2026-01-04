@@ -9,9 +9,8 @@ body {
 }
 
 nav {
-    background-color:#ad5d5d;
-    background-image: linear-gradient(to right, #ad5d5d ,#92b6d5, #af9483);
-    position: fixed;        
+    background-color:rgba(58, 49, 31, 0.95);
+    position: fixed;
     text-align: center;
     width: 100%;
     height: 2em;
@@ -36,7 +35,7 @@ nav a{
 }
 
 nav a:hover {
-    background-color: rgb(150, 78, 179);
+    background-color:rgba(211, 205, 191, 0.95);
     border-radius: 10px ;
     transform: scale(1.05);
 }
@@ -58,6 +57,7 @@ nav div.nav-info {
 
 nav div.nav-info .badge-threat {
     background-color: #ea6f0a;
+    border:3px solid rgba(255, 38, 0, 0.63);
     background-image: linear-gradient(to right,rgba(228, 138, 20, 0.5),rgba(219, 185, 135, 0.5),rgba(228, 125, 29, 0.5) );
     padding: 0.3em;
     border-radius: 15px;
@@ -78,14 +78,13 @@ section.information {
     padding-bottom: 40px;
 }
 
- .side-bar{
+.side-bar{
     margin-left: 4%;
     margin-top: 2em;
     position: sticky;
     display: flex;
     flex-direction: column;
-    background-color:#ad5d5d;
-    background-image: linear-gradient(to bottom,#ad5d5d ,#6A89A8,#7E6BAE, #C89092);
+    background-color:rgba(58, 49, 31, 0.5);
     border-radius: 10px;
     gap: 10px;
     text-align: center;
@@ -93,7 +92,6 @@ section.information {
     padding-bottom: 2em;
     top: 5em;
 }
-
 .side-bar h2{
     font-size: 28px;
     border-bottom: 3px solid #D2A13A;
@@ -103,6 +101,14 @@ section.information {
     width: 5em;
     height: 5em;
     margin: auto;
+}
+
+.side-bar h3, h2 {
+    color: rgb(204, 194, 168);;
+}
+
+.side-bar p, span{
+    color: whitesmoke;
 }
 
 .side-bar-content {
@@ -169,21 +175,20 @@ section.information {
 }
 
 .main-nav a.current {
-    background-color:#60a0ca;
+    background-color: rgb(204, 194, 168);
     border-radius: 10px;
     font-weight: bold;
 }
 
 .main-nav a:hover {
-    background-color: #306ba1;
+    background-color: rgb(118, 107, 80);
     transform: scale(1.05);
 }
 
 .side-bar-phone {
-    width: 82%;
     display: none;
     flex-direction: column;
-    background-color: #181717;
+    background-color:rgba(58, 49, 31, 0.5);
     border-radius: 10px;
     color: white;
     margin: auto;
@@ -193,6 +198,11 @@ section.information {
 .side-bar-phone h2 {
     font-size: 28px;
     margin: 0;
+    color: rgb(204, 194, 168);
+}
+
+.side-bar-phone h3 {
+    color: rgb(204, 194, 168);
 }
 
 .side-bar-phone-divider {
